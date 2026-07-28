@@ -1,5 +1,7 @@
 # NFC crystallography
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21639283.svg)](https://doi.org/10.5281/zenodo.21639283)
+
 This repository is the ordinary, public entry point for a crystallographic
 methods result developed in the NFC research program:
 
@@ -43,6 +45,12 @@ Verify the method-source bindings:
 nfc-cryst verify-methods
 ```
 
+For a wheel installation, locate the bundled frozen release payload with:
+
+```bash
+nfc-cryst release-root
+```
+
 Run the repaired conventional qualification comparison on three DIALS
 experiment files:
 
@@ -77,7 +85,8 @@ python scripts/run_baseline_case.py \
 Generating the case from public raw PILATUS MiniCBF frames requires a DIALS
 runtime because the raw adapter consumes dxtbx geometry. The exact adapter and
 frozen D4/D4.5 sources are retained under
-`methods/baseline_B/raw_pipeline/`. Public data are not vendored.
+`methods/baseline_B/raw_pipeline/` in a checkout and under the path printed by
+`nfc-cryst release-root` in an installed wheel. Public data are not vendored.
 
 The reproduction boundary is deliberate:
 
@@ -87,6 +96,18 @@ The reproduction boundary is deliberate:
 - historical releases remain the deep audit record.
 
 See [REPRODUCING.md](REPRODUCING.md) for the full path.
+
+## Release history
+
+- `v0.1.0` is the immutable first public methods milestone. Its compact 8VTD
+  replay remains valid, but the distributed package omitted frozen support
+  modules needed for ordinary new-raw D4.5 construction.
+- `v0.1.1` restores those exact hash-bound modules and verifies the installed
+  wheel. It is a packaging-only correction and does not change baseline B,
+  candidate C, any scientific threshold, or any historical outcome.
+
+The version-independent archival identifier is
+[Zenodo concept DOI 10.5281/zenodo.21639283](https://doi.org/10.5281/zenodo.21639283).
 
 ## Methods and comparators
 

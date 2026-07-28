@@ -8,6 +8,7 @@ from nfc_cryst.canonical import write_canonical_json
 from nfc_cryst.conventional_gate import GateThresholds, qualify_experiments
 from nfc_cryst.evidence import load_evidence, markdown_table
 from nfc_cryst.methods import verify_method_sources
+from nfc_cryst.paths import release_root
 
 
 def _qualify(args: argparse.Namespace) -> int:
@@ -49,6 +50,11 @@ def _verify_methods(_: argparse.Namespace) -> int:
     return 0 if result["passed"] else 1
 
 
+def _release_root(_: argparse.Namespace) -> int:
+    print(release_root())
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="nfc-cryst")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -61,6 +67,12 @@ def build_parser() -> argparse.ArgumentParser:
         "verify-methods", help="verify bundled frozen-source identities"
     )
     verify.set_defaults(handler=_verify_methods)
+
+    root = subparsers.add_parser(
+        "release-root",
+        help="print the installed or source-checkout release-payload root",
+    )
+    root.set_defaults(handler=_release_root)
 
     qualify = subparsers.add_parser(
         "qualify-conventional",

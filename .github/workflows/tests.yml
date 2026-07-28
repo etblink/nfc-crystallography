@@ -16,7 +16,17 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: python -m pip install --upgrade pip
-      - run: python -m pip install -e '.[dev]'
+      - run: python -m pip install -e '.[dev]' build
+      - run: ruff check .
       - run: pytest
       - run: nfc-cryst verify-methods
       - run: nfc-cryst evidence --format json > /tmp/evidence.json
+      - name: Build and verify installed wheel
+        run: |
+          python -m build
+          python -m venv --system-site-packages /tmp/nfc-cryst-wheel
+          /tmp/nfc-cryst-wheel/bin/python -m pip install \
+            --no-deps --force-reinstall dist/*.whl
+          cd /tmp
+          /tmp/nfc-cryst-wheel/bin/python \
+            "$GITHUB_WORKSPACE/scripts/verify_installed_distribution.py"

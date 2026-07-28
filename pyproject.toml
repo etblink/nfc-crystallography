@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nfc-crystallography"
-version = "0.1.0"
+version = "0.1.1"
 description = "Raw-only repeat-certified reciprocal-spot consolidation and primitive-lattice recovery with abstention."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -33,14 +33,26 @@ dev = [
 [project.scripts]
 nfc-cryst = "nfc_cryst.cli:main"
 
+[tool.hatch.build]
+exclude = [
+  "**/__pycache__",
+  "**/*.pyc",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/nfc_cryst"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"methods" = "nfc_cryst/_release/methods"
+"results" = "nfc_cryst/_release/results"
+"data_manifests" = "nfc_cryst/_release/data_manifests"
 
 [tool.pytest.ini_options]
 addopts = "-ra"
 testpaths = ["tests"]
 
 [tool.ruff]
+exclude = ["methods"]
 line-length = 88
 target-version = "py310"
 
