@@ -6,6 +6,10 @@ authors:
   - family-names: Kotler
     given-names: Evan Thomas
 repository-code: "https://github.com/etblink/nfc-crystallography"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21639283"
+    description: "Zenodo concept DOI for all versions"
 license: BSD-3-Clause
 version: 0.1.1
 date-released: 2026-07-28

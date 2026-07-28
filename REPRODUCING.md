@@ -16,6 +16,15 @@ nfc-cryst evidence --format markdown
 These checks validate the public utilities, method-source bindings, evidence
 schema, and invariant conventional gate.
 
+The release CI also builds the wheel and source distribution, installs the
+wheel in an isolated environment, verifies every frozen-source hash, loads the
+evidence record, and imports the complete new-raw support-module chain from the
+installed payload. The installed payload root is printed by:
+
+```bash
+nfc-cryst release-root
+```
+
 ### 2. Compact truth-free D5 replay
 
 Obtain a compact fixed-D4.5 case from one of the archived reproducibility
@@ -39,6 +48,10 @@ Raw-frame replay requires:
 3. the exact raw adapter in `methods/baseline_B/raw_pipeline/`;
 4. the frozen D4 C decoder built locally;
 5. sufficient disk, memory, and CPU time.
+
+In a source checkout, the adapter lives at
+`methods/baseline_B/raw_pipeline/build_pilatus_d45_feed.py`. In a wheel
+installation, prepend the path printed by `nfc-cryst release-root`.
 
 Public archives are deliberately not committed to Git. Use
 `scripts/download_public_inputs.py` to download and verify a manifest that
@@ -75,3 +88,11 @@ The exact archived ZIPs remain the controlling deep evidence:
 The repository does not rewrite those artifacts. It exposes their scientific
 content in a form that can be run and reviewed without following the entire
 historical governance chain.
+
+## Packaging correction
+
+`v0.1.0` remains the immutable first public release. Its compact 8VTD replay is
+unaffected, but its distributed package omitted frozen support modules needed
+for ordinary new-raw D4.5 construction. `v0.1.1` restores the exact
+archive-bound modules and adds an installed-wheel regression check. No
+scientific source, rule, threshold, or historical decision changes.
