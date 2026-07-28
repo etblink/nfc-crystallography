@@ -7,5 +7,5 @@ authors:
     given-names: Evan Thomas
 repository-code: "https://github.com/etblink/nfc-crystallography"
 license: BSD-3-Clause
-version: 0.1.0
-date-released: 2026-07-27
+version: 0.1.1
+date-released: 2026-07-28

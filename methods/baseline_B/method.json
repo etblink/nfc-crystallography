@@ -15,8 +15,20 @@
       "sha256": "9ae165ca3c32cb0d67079291014cac5101617f880384acfa1a554d61e26402ec"
     },
     {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/build_fixed_control_feeds.py",
+      "sha256": "63d5365da36c97de4ff78a925c3c3d3be6738ae99a3c490c9ce716ea81fd2fd7"
+    },
+    {
       "path": "methods/baseline_B/runtime/restored/candidate/scripts/d45_aggregation.py",
       "sha256": "856f21d2b5f3fe5f7c14e6ec93c5a7702424ccef892c34d9e0e50621a8d33f4c"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/d45_scan_direction_diagnostic.py",
+      "sha256": "42a2488d0809f335fcb5967fef4b0ec2a46e7868beea0a9d0482ae8d43eddc40"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/d45_successor.py",
+      "sha256": "c4136049734007ad3b5b4d58cb81423181fa1c6b86e201b7cb131bc54add7c26"
     },
     {
       "path": "methods/baseline_B/runtime/restored/candidate/scripts/d5_successor_rule_0_1_0.json",
@@ -29,6 +41,10 @@
     {
       "path": "methods/baseline_B/runtime/restored/candidate/scripts/pilatus_portability.py",
       "sha256": "a04aadc1b4cf2c7c24b45bedb8d8cd8c36ed84ed9477ab0806c4a601c2c5b585"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/prior_run_generalization.py",
+      "sha256": "a484ae4bcb93b976c1b0b7d8ed3758779d13e44b13d59ffe55e57589d3175bba"
     },
     {
       "path": "methods/baseline_B/runtime/restored/candidate/scripts/frozen_core/d4_detection_rule_freeze_0_1_0.json",
