@@ -1,0 +1,49 @@
+{
+  "artifact_id": "NFC_CRYST_BASELINE_B_PROSPECTIVE_TRANSFER_02_PREFLIGHT_EXCLUSION_4G2A_0_1_0",
+  "completed_at_utc": "2026-07-28T06:44:28Z",
+  "candidate": "IRRMC_JCSG_SP19411A_4G2A",
+  "selection_record_sha256": "2fb3ecd4d3ab1d5589d84cf22dfc31d466aa5536504bcea67a94eeb1f72758fe",
+  "raw_archive": {
+    "url": "https://data.proteindiffraction.org/jcsg/deposited/psi_biology/2012/SP19411A_4g2a.tz",
+    "size_bytes": 2264682763,
+    "sha256": "efc2cf1269207c417efb8841f272b83fd858095b1ac9b6015fe87fdadfde7db9"
+  },
+  "archive_safety": {
+    "member_count": 622,
+    "unique_member_count": 622,
+    "duplicate_member_count": 0,
+    "unsafe_path_count": 0,
+    "link_count": 0,
+    "cbf_frame_count": 578
+  },
+  "fixed_interface_preflight": {
+    "frames_examined": 578,
+    "frames_accepted": 0,
+    "header_conventions": {
+      "SLS_1.0": 578
+    },
+    "conversions": {
+      "x-CBF_BYTE_OFFSET": 578
+    },
+    "rotation_axes": {
+      "X, CW": 578
+    },
+    "dimensions": {
+      "2463x2527": 578
+    },
+    "required_header_convention": "PILATUS_1.2",
+    "required_rotation_axis": "PHI",
+    "result": "UNSUPPORTED_BY_RELEASED_FIXED_RAW_INTERFACE"
+  },
+  "information_firewall": {
+    "conventional_cell_or_orientation_consulted": false,
+    "conventional_space_group_consulted": false,
+    "processed_reflection_values_consulted": false,
+    "d4_5_feed_computed": false,
+    "baseline_b_executed": false,
+    "candidate_c_executed": false
+  },
+  "scientific_test_consumed": false,
+  "disposition": "PREEXECUTION_TECHNICAL_EXCLUSION",
+  "next_query_ordered_candidate": "IRRMC_JCSG_SP19248A_4JX2"
+}
