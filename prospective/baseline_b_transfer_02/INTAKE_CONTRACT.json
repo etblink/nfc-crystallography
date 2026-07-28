@@ -1,0 +1,122 @@
+{
+  "artifact_id": "NFC_CRYST_BASELINE_B_PROSPECTIVE_TRANSFER_02_INTAKE_CONTRACT_0_1_0",
+  "frozen_at_utc": "2026-07-28T06:29:56Z",
+  "scientific_question": "Does the unchanged public v0.1.0 baseline B recover the primitive lattice, or appropriately abstain, on the first technically and conventionally qualified untouched public corpus selected by the rule below?",
+  "release_binding": {
+    "repository": "https://github.com/etblink/nfc-crystallography",
+    "release": "https://github.com/etblink/nfc-crystallography/releases/tag/v0.1.0",
+    "tag": "v0.1.0",
+    "merge_commit": "e890a36a720f8babe6b1c69690c60368e9e3585b",
+    "git_tree": "e915d1d8d6220360446a4c9cead618307fc4e8ef",
+    "deterministic_source_archive_sha256": "c3415f65a86e463aac177889779dc1026c273368da99cbceec7ab9bb6755a1a1",
+    "baseline_b_release_zip_sha256": "ba18310a04a45c13f1fdf100599c77f2da9fa8ba2f43ec9e942719871b6edf48",
+    "baseline_b_method_record_sha256": "598f612f3af62092ef056831a8b4fdf6ee840b20b08707cc3f701fd5c0532c69",
+    "eight_vtd_truth_free_decision_sha256": "18d8664318f9d27964a4abe179841acf34a2f4bb50e6b836e034ffb154afe249"
+  },
+  "method_boundary": {
+    "method": "BASELINE_B_MULTISCALE_BIDIRECTIONAL_D45_D5",
+    "candidate_c_execution": "PROHIBITED",
+    "method_change_after_corpus_selection": "PROHIBITED",
+    "d4_5_change": "PROHIBITED",
+    "floor_ladder_change": "PROHIBITED",
+    "split_rule_change": "PROHIBITED",
+    "candidate_generation_change": "PROHIBITED",
+    "persistence_change": "PROHIBITED",
+    "phase_component_change": "PROHIBITED",
+    "finite_index_audit_change": "PROHIBITED",
+    "threshold_change": "PROHIBITED",
+    "abstention_logic_change": "PROHIBITED"
+  },
+  "selection": {
+    "source": "Protein Diffraction public search",
+    "query": "PILATUS PHI",
+    "query_url": "https://proteindiffraction.org/search/?q=PILATUS%20PHI",
+    "rule": "IN_PUBLIC_QUERY_ORDER_SELECT_THE_FIRST_RECORD_WITH_A_DOWNLOADABLE_RAW_ARCHIVE_AT_OR_BELOW_FIVE_GIBIBYTES_THAT_IS_ABSENT_FROM_THE_EXPOSURE_LEDGER_PASSES_THE_FIXED_NATIVE_PILATUS_INTERFACE_AND_PASSES_CELL_BLIND_CONVENTIONAL_FULL_AND_SPLIT_INDEXING_UNDER_THE_RELEASED_BASIS_INVARIANT_GATE",
+    "archive_ceiling_bytes": 5368709120,
+    "no_early_stopping_for_expected_nfc_performance": true,
+    "nfc_performance_used_for_selection": false,
+    "conventional_cell_orientation_or_symmetry_used_for_selection": false,
+    "processed_reflection_values_used_for_selection": false,
+    "preexecution_exclusions_do_not_consume_the_scientific_test": true,
+    "stop_after_first_fully_valid_corpus": true
+  },
+  "exposure_ledger": {
+    "development_diagnostic_or_prior_prospective": [
+      "9Z6F",
+      "9JQ9",
+      "6GN2",
+      "6GN3",
+      "6MFU",
+      "5V0G",
+      "6W61",
+      "7OL1",
+      "8VTD",
+      "9JZO",
+      "6CKT",
+      "6TPI"
+    ],
+    "prior_fixed_interface_exclusions": [
+      "9P5A",
+      "9P5D",
+      "9P5E",
+      "9P5G",
+      "9P5F",
+      "9P56",
+      "9P59",
+      "9P57",
+      "9P58",
+      "11AF"
+    ]
+  },
+  "technical_intake": {
+    "raw_representation": "NATIVE_SINGLE_PANEL_DECTRIS_PILATUS_1_2_MINICBF",
+    "cbf_header_convention": "PILATUS_1.2",
+    "compression": "x-CBF_BYTE_OFFSET",
+    "element_type": "signed 32-bit integer",
+    "byte_order": "LITTLE_ENDIAN",
+    "rotation_axis": "PHI",
+    "complete_public_archive_required": true,
+    "archive_and_frame_hashes_required": true,
+    "one_unambiguous_acquisition_interface_required": true
+  },
+  "conventional_qualification": {
+    "truth_role": "POSITIVE_CONTROL_QUALIFICATION_AND_POST_COMMITMENT_SCORING_ONLY",
+    "full_and_two_split_solutions_required": true,
+    "cell_blind_primary_indexing": true,
+    "minimum_assigned_fraction": 0.5,
+    "maximum_relative_metric_difference": 0.05,
+    "maximum_basis_invariant_orientation_difference_degrees": 2.0,
+    "basis_search_bound": 1,
+    "fail_closed": true,
+    "cell_orientation_and_symmetry_hidden_from_nfc_execution": true
+  },
+  "execution_order": [
+    "PUBLIC_RAW_DATA_INTAKE",
+    "CONVENTIONAL_FULL_AND_SPLIT_QUALIFICATION",
+    "RAW_INPUT_GEOMETRY_AND_QUALIFICATION_HASH_BINDING",
+    "TRUTH_CONCEALMENT",
+    "FIXED_D4_5_FEED_CONSTRUCTION_AND_HASHING",
+    "BASELINE_B_EXECUTION_IN_A_TRUTH_FREE_PROCESS",
+    "TRUTH_FREE_DECISION_AND_SURVIVOR_COMMITMENT",
+    "CONVENTIONAL_TRUTH_REVEAL",
+    "PRIMITIVE_EQUIVALENCE_SCORING",
+    "COMPLETE_PUBLICATION_OF_THE_OUTCOME"
+  ],
+  "allowed_committed_decisions": [
+    "LATTICE_RECOVERED",
+    "AMBIGUOUS_LATTICE",
+    "INSUFFICIENT_SIGNAL"
+  ],
+  "post_reveal_classifications": [
+    "CORRECT_PRIMITIVE_LATTICE_RECOVERED",
+    "CONSERVATIVE_MISSED_POSITIVE",
+    "CONFIDENT_INCORRECT_RECOVERY"
+  ],
+  "d6c1_gate": {
+    "requires_correct_recovery_in_this_test": true,
+    "requires_zero_confident_incorrect_prospective_recoveries": true,
+    "requires_public_reproducible_observation_level_reduction": true,
+    "status_before_this_test": "NOT_SATISFIED"
+  },
+  "claim_boundary": "ONE_BASELINE_B_PROSPECTIVE_GEOMETRIC_TRANSFER_TEST_ONLY_NO_D6C1_D6C2_D7_OR_COSMOLOGY_INFERENCE"
+}
