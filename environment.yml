@@ -1,0 +1,11 @@
+name: nfc-crystallography
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - scipy
+  - pytest
+  - pip
+  - pip:
+      - -e .

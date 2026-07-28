@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "public_identifier": "IRRMC_9JZO",
+  "role": "PAIRED_PROSPECTIVE_TRANSFER",
+  "repository": "Integrated Resource for Reproducibility in Macromolecular Crystallography",
+  "download": {
+    "url": "https://data.proteindiffraction.org/other/JS_35P2_C3-002_diffraction_files_9JZO.tar.bz2",
+    "size_bytes": 1577739163,
+    "sha256": "069c3f0b4deb202d9536421da890026ccc4672f167591c67873c4871dffdb1b7",
+    "verification": "sha256"
+  },
+  "paired_release_zip_sha256": "c5d437842e6f3fe6f603b2ff4e9a4511e8a6002a59f947e1f2181b640770202e",
+  "baseline_b_outcome": "AMBIGUOUS_LATTICE",
+  "candidate_c_outcome": "AMBIGUOUS_LATTICE",
+  "postcommitment_scoring": "COMMON_LATENT_FAMILY_PRIMITIVE_EQUIVALENT",
+  "interpretation": "CONSERVATIVE_MISSED_RECOVERY_EXACT_COMPARATOR_TIE"
+}

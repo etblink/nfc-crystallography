@@ -1,0 +1,19 @@
+{
+  "method_id": "CANDIDATE_C_FIXED_CAUCHY_PHASE_SUBSTITUTION",
+  "status": "EXPERIMENTAL_COMPATIBLE_ALTERNATIVE_NOT_PROMOTED",
+  "release_zip_sha256": "e9e2b2872c64c37bc487824385488fb5b009c2739cddf5a4089409bebc39499d",
+  "diff_from_baseline_b": "FIXED_0.003_ANGSTROM_INVERSE_CAUCHY_PHASE_AFFINITY_ONLY",
+  "prospective_incremental_value": "NOT_ESTABLISHED",
+  "paired_9jzo_outcome": "EXACT_TIE",
+  "bundled_sources": [
+    {
+      "path": "methods/candidate_C_experimental/run_full_stack_cauchy_case.py",
+      "sha256": "68f3a53c4a40b75dd91be1d2487f4c08e960645b378b534d2285b949dae723d4"
+    },
+    {
+      "path": "methods/candidate_C_experimental/FULL_STACK_CAUCHY_INTEGRATION_PROTOCOL_0_1_0.json",
+      "sha256": "539d0c190434493b59e4b427213422a02922823e090eea9468a599fceb355da1"
+    }
+  ],
+  "claim_boundary": "COMPATIBILITY_NOT_SUPERIORITY"
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_id": "NFC_CRYST_EXPLORATORY_D5_MULTISCALE_BIDIRECTIONAL_INDEX_TWO_RULE_0_1_0",
+  "scientific_scope": "OPEN_EXPLORATORY_DEVELOPMENT_NOT_CONFIRMATORY",
+  "seed_floors_cycles_per_angstrom": [0.012, 0.009, 0.006],
+  "seed_floor_derivation": "4_3_2_TIMES_EXISTING_0_003_DIFFERENCE_VOXEL_WIDTH",
+  "minimum_persistent_scales": 2,
+  "maximum_basis_integer_deviation": 0.03,
+  "completion_index": 2,
+  "completion_branches": 7,
+  "paired_support_maximum_p": 0.03125,
+  "strong_completion_minimum_gain": 0.1,
+  "weak_completion_minimum_gain": 0.015625,
+  "weak_gain_derivation": "1_DIVIDED_BY_EXISTING_63_ORIGIN_NULLS_PLUS_OBSERVED_ORIGIN",
+  "weak_equal_index_specificity": "SAME_UNIQUE_BRANCH_MAXIMIZES_GAIN_IN_ALL_FIVE_COMPARISONS",
+  "pre_refinement_completion_evidence": "AMBIGUITY_ONLY_NEVER_RECOVERY",
+  "single_scale_recovery_or_strong_completion": "CONFLICT_WITNESS_ONLY_NEVER_RECOVERY",
+  "truth_firewall": {
+    "truth_removed_before_candidate_generation": true,
+    "truth_used_by_decision": false,
+    "truth_used_after_decision_for_scoring_only": true
+  },
+  "historical_boundary": {
+    "archived_6mfu_decision": "INSUFFICIENT_SIGNAL",
+    "archived_6mfu_changed_or_reinterpreted": false,
+    "frozen_method_0_3_0_changed": false
+  }
+}

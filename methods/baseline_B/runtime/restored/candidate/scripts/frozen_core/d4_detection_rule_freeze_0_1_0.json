@@ -1,0 +1,83 @@
+{
+  "artifact_id": "NFC_CRYST_9Z6F_D4_DETECTOR_ONLY_RULE_FREEZE_0_1_0",
+  "frozen_at_utc": "2026-07-25T05:02:00Z",
+  "scientific_scope": "SPECIMEN_A_OPEN_DEVELOPMENT_RAW_CBF_PEAK_CONSTRUCTION",
+  "allowed_inputs": [
+    "source/raw/Archive.zip CBF members only",
+    "source/raw/metadata.txt",
+    "CBF-embedded acquisition and detector geometry",
+    "d4_cbf_byte_offset.c"
+  ],
+  "prohibited_construction_inputs": [
+    "processed HKL",
+    "XDS.INP",
+    "conventional peak lists",
+    "cell parameters",
+    "SHELX instructions",
+    "FCF calculated factors or phases",
+    "solved structure or atomic coordinates"
+  ],
+  "raw_archive_binding": {
+    "byte_count": 817839975,
+    "sha256": "fc639d3c87bb0d5c9002c78a17d0cbe85cd4879e638a3236a49ae1a95f48ecc1"
+  },
+  "frame_interface": {
+    "encoding": "x-CBF_BYTE_OFFSET",
+    "element_type": "signed 32-bit integer",
+    "dimensions": {
+      "fast_x": 800,
+      "slow_y": 775
+    },
+    "invalid_pixel_rule": "RAW_VALUE_LESS_THAN_ZERO",
+    "negative_sentinel_interpretation": "MASKED_OR_INVALID_DETECTOR_PIXEL",
+    "saturation_rule": "SATURATION_THRESHOLD_UNAVAILABLE_NO_UNLICENSED_THRESHOLD_INFERENCE"
+  },
+  "background_rule": {
+    "tile_width_pixels": 32,
+    "tile_height_pixels": 32,
+    "background_per_tile": "MEDIAN_OF_NONNEGATIVE_PIXELS",
+    "robust_scale_per_tile": "MAX(1,1.4826_TIMES_MAD,SQRT(MAX(MEDIAN,0)+1))",
+    "spatial_interpolation": "PIECEWISE_CONSTANT_WITHIN_EACH_TILE",
+    "fully_masked_tile": "BACKGROUND_ZERO_SCALE_INFINITY_AND_EXCLUDED"
+  },
+  "detection_rule": {
+    "seed_z_minimum": 8.0,
+    "seed_excess_count_minimum": 8.0,
+    "growth_z_minimum": 3.0,
+    "growth_excess_must_be_positive": true,
+    "connectivity": "EIGHT_CONNECTED",
+    "minimum_component_pixel_count": 2,
+    "minimum_integrated_signal_to_formal_noise": 12.0,
+    "outlier_rejection": "NONE",
+    "component_splitting": "PROHIBITED_MULTI_MAXIMUM_COMPONENTS_REMAIN_TYPED_UNRESOLVED"
+  },
+  "peak_quantities": {
+    "background": "SUM_OF_TILE_BACKGROUND_OVER_COMPONENT_SUPPORT",
+    "signal": "SUM_OF_MAX(RAW_MINUS_BACKGROUND,0)_OVER_COMPONENT_SUPPORT",
+    "formal_sigma_signal": "SQRT(SUM(ROBUST_TILE_SCALE_SQUARED)_OVER_COMPONENT_SUPPORT)",
+    "centroid": "POSITIVE_EXCESS_WEIGHTED_PIXEL_CENTER",
+    "uncertainty_region": "COMPONENT_PIXEL_FOOTPRINT_BOUNDING_BOX_EXPANDED_BY_HALF_PIXEL_AND_THREE_FORMAL_CENTROID_STANDARD_ERRORS",
+    "separation_margin": "EUCLIDEAN_DISTANCE_BETWEEN_AXIS_ALIGNED_UNCERTAINTY_BOXES_IN_THE_SAME_FRAME"
+  },
+  "quality_typing": {
+    "edge_guard_pixels": 2,
+    "mask_guard_pixels": 2,
+    "local_maximum_neighborhood": "3_BY_3",
+    "overlap_rule": "MORE_THAN_ONE_CONNECTED_LOCAL_MAXIMUM_PLATEAU_IN_ONE_GROWN_COMPONENT",
+    "unresolved_rule": "MULTI_MAXIMUM_COMPONENT_OR_NONPOSITIVE_UNCERTAINTY_BOX_SEPARATION",
+    "saturation_status": "UNKNOWN_FOR_ALL_PEAKS_UNLESS_AN_EXPLICIT_CBF_OVERLOAD_SENTINEL_IS_PRESENT"
+  },
+  "diagnostics_after_construction_only": {
+    "possible_false_positive_proxy": "PEAK_WITH_NO_NEIGHBOR_WITHIN_2.5_PIXELS_IN_EITHER_ADJACENT_ROTATION_FRAME",
+    "possible_false_negative_proxy": "ADJACENT_OUTER_FRAME_PAIR_MATCHED_WITHIN_5_PIXELS_BUT_NO_MIDDLE_FRAME_PEAK_WITHIN_3_PIXELS_OF_INTERPOLATED_POSITION",
+    "interpretation": "RAW_TEMPORAL_CONSISTENCY_PROXIES_NOT_CALIBRATED_ERROR_RATES",
+    "diagnostics_may_modify_peak_set": false
+  },
+  "invariance_scope": {
+    "catalog_row_order": "REQUIRED",
+    "frame_iteration_order": "REQUIRED",
+    "archive_filename": "REQUIRED_FOR_SCIENTIFIC_SEMANTICS",
+    "detector_pixel_row_order": "NOT_AN_INVARIANCE_BECAUSE_PIXEL_ROWS_ARE_SPATIAL_COORDINATES"
+  },
+  "method_freeze_statement": "NO_THRESHOLD_OR_CLASSIFICATION_RULE_MAY_BE RETUNED AFTER FULL-CORPUS CONSTRUCTION OR RETROSPECTIVE DIAGNOSTICS"
+}

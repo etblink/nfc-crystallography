@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "public_identifier": "IRRMC_8VTD",
+  "role": "PROSPECTIVE_CORRECT_TRANSFER",
+  "repository": "Integrated Resource for Reproducibility in Macromolecular Crystallography",
+  "download": {
+    "url": "https://data.proteindiffraction.org/other/8vtd.tar.bz2",
+    "size_bytes": 1835008143,
+    "sha256": "f7e8a19a0d572e5662b9242c7c57ef87c26ac059f9cee5533e2a66c6b3201421",
+    "verification": "sha256"
+  },
+  "prospective_release_zip_sha256": "de10c22c396149fca2f70e3c14f0e1391dc11009dec147a525105f05ceac47b8",
+  "outcome": "CORRECT_PRIMITIVE_LATTICE_RECOVERED",
+  "information_boundary": "CONVENTIONAL_CELL_AND_ORIENTATION_REVEALED_AFTER_DECISION_COMMITMENT"
+}

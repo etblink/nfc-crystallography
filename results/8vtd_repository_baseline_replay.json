@@ -1,0 +1,22 @@
+{
+  "artifact_type": "REPOSITORY_LAYOUT_BASELINE_B_REPLAY_CHECK",
+  "corpus": "8VTD",
+  "executed_utc_date": "2026-07-27",
+  "method_release_zip_sha256": "ba18310a04a45c13f1fdf100599c77f2da9fa8ba2f43ec9e942719871b6edf48",
+  "fixed_d45_case_sha256": "c9e22bd2392e7dffc9c61c595567ed2744e54bdc13efd4a066b41991f97736d1",
+  "archived_truth_free_evaluation_sha256": "9e0daba96931ccca68344173c34917433259227991204db299b52267ae10c080",
+  "repository_wrapper_output_sha256": "93c044aaaf43b780ab029b27061c37833ef5689c15fba63be139e2bdf9327d73",
+  "decision": {
+    "decision": "LATTICE_RECOVERED",
+    "reason": "ONE_PERSISTENT_FAMILY_SURVIVES",
+    "truth_consulted": false,
+    "semantic_sha256": "18d8664318f9d27964a4abe179841acf34a2f4bb50e6b836e034ffb154afe249"
+  },
+  "comparison_to_archived_result": {
+    "elapsed_seconds_excluded": true,
+    "nonfloating_value_mismatches": 0,
+    "maximum_absolute_floating_difference": 2.8275992658421956e-15,
+    "interpretation": "SCIENTIFIC_RECORD_REPRODUCED_WITH_FLOATING_ULP_DIFFERENCES_ACROSS_RUNTIME"
+  },
+  "principal_outcome": "BASELINE_B_REPOSITORY_LAYOUT_REPLAY_PASSED"
+}
