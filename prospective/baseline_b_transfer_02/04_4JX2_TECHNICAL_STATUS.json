@@ -1,0 +1,76 @@
+{
+  "artifact_id": "NFC_CRYST_BASELINE_B_PROSPECTIVE_TRANSFER_02_4JX2_TECHNICAL_STATUS_0_1_0",
+  "recorded_at_utc": "2026-07-28T06:57:58Z",
+  "candidate": "IRRMC_JCSG_SP19248A_4JX2",
+  "selection_record_sha256": "34556e31fbc7de40beaf6efad9f693cee71abed3a2b8262aa2634d0489a9cf6c",
+  "raw_archive": {
+    "url": "https://data.proteindiffraction.org/jcsg/deposited/psi_biology/2013/SP19248A_4jx2.tz",
+    "size_bytes": 2236189235,
+    "sha256": "1d833cd501fd86dd846f3a7eeb22062eb9917012a1c1cc37fc6800596c3c504a"
+  },
+  "archive_safety": {
+    "member_count": 564,
+    "unique_member_count": 564,
+    "duplicate_member_count": 0,
+    "unsafe_path_count": 0,
+    "cbf_frame_count": 542,
+    "internal_link_count": 1,
+    "internal_link": {
+      "path": "./x/192242_0_00001.mosflm_log",
+      "target": "192242_0_00001.mosflm_log1",
+      "raw_frame_member": false
+    }
+  },
+  "header_census": {
+    "frames_examined": 542,
+    "header_conventions": {
+      "PILATUS_1.2": 542
+    },
+    "conversions": {
+      "x-CBF_BYTE_OFFSET": 542
+    },
+    "dimensions": {
+      "2463x2527": 542
+    },
+    "literal_oscillation_axis_header_matches": {
+      "0": 542
+    }
+  },
+  "released_adapter_sample": {
+    "frame": "192242_1_E1_00107.cbf",
+    "format_class": "dxtbx.format.FormatCBFMiniPilatus.FormatCBFMiniPilatus",
+    "single_panel": true,
+    "image_size": [
+      2463,
+      2527
+    ],
+    "single_rotation_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "fixed_rotation_identity": true,
+    "setting_rotation_identity": true,
+    "oscillation_degrees": [
+      250.00000000000003,
+      0.5
+    ],
+    "origin_reconstruction_max_abs_m": 5.551115123125783e-17,
+    "result": "RELEASED_DXTBX_GEOMETRY_ADAPTER_SAMPLE_PASS"
+  },
+  "information_firewall": {
+    "conventional_cell_or_orientation_consulted": false,
+    "conventional_space_group_consulted": false,
+    "processed_reflection_values_consulted": false,
+    "d4_5_feed_computed": false,
+    "baseline_b_executed": false,
+    "candidate_c_executed": false
+  },
+  "execution_status": "PAUSED_BEFORE_CONVENTIONAL_QUALIFICATION",
+  "pause_reasons": [
+    "LOCAL_WORKSPACE_QUOTA_EXHAUSTED_DURING_FULL_CBF_EXTRACTION",
+    "PUBLIC_V0_1_0_RAW_BUILDER_REFERENCES_TWO_FROZEN_SUPPORT_MODULES_NOT_PRESENT_IN_THE_RELEASE_TREE"
+  ],
+  "scientific_test_consumed": false,
+  "scientific_outcome": "NONE"
+}
