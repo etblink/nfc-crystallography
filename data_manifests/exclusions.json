@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "exclusions": [
+    {
+      "identifier": "9Z6F",
+      "reason": "SPECIMEN_A_METHOD_DEVELOPMENT"
+    },
+    {
+      "identifier": "9JQ9",
+      "reason": "PORTABILITY_DEVELOPMENT_AND_ADVERSE_DIAGNOSTIC"
+    },
+    {
+      "identifier": "6CKT",
+      "reason": "PREEXECUTION_DIRECT_ORIENTATION_GATE_EXCLUSION_NO_NFC_RUN"
+    },
+    {
+      "identifier": "6TPI",
+      "reason": "PREEXECUTION_DIRECT_ORIENTATION_GATE_EXCLUSION_NO_NFC_RUN"
+    }
+  ],
+  "note": "6CKT and 6TPI are now gate-development corpora; their exclusions remain historical facts."
+}

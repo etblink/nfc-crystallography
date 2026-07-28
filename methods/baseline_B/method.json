@@ -1,0 +1,71 @@
+{
+  "method_id": "BASELINE_B_MULTISCALE_BIDIRECTIONAL_D45_D5",
+  "status": "CONTROLLING_DEFAULT",
+  "release_zip_sha256": "ba18310a04a45c13f1fdf100599c77f2da9fa8ba2f43ec9e942719871b6edf48",
+  "scientific_scope": "RAW_D4_THROUGH_GEOMETRIC_D5_RECOVERY_OR_ABSTENTION",
+  "phase_component": "ARCHIVED_HARD_NEIGHBORHOOD_PHASE_COMPONENT",
+  "method_changes_in_this_repository": false,
+  "bundled_sources": [
+    {
+      "path": "methods/baseline_B/runtime/rebuild/evaluate.py",
+      "sha256": "2fe1c017d287ee7cb24abb8c8c7cc100f46c72c24f5b38b6ad0654b456a06002"
+    },
+    {
+      "path": "methods/baseline_B/runtime/rebuild/d5_multiscale_bidirectional_rule_0_1_0.json",
+      "sha256": "9ae165ca3c32cb0d67079291014cac5101617f880384acfa1a554d61e26402ec"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/d45_aggregation.py",
+      "sha256": "856f21d2b5f3fe5f7c14e6ec93c5a7702424ccef892c34d9e0e50621a8d33f4c"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/d5_successor_rule_0_1_0.json",
+      "sha256": "d1bfb1f5018d032d2803e08c0146a3ac5d9b7b06bbd3337698ae17675562c365"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/evaluate_d5_successor.py",
+      "sha256": "0f142754f11e0703642a304f74452dde9233ffb4073709afe206b8d07ddec2f5"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/pilatus_portability.py",
+      "sha256": "a04aadc1b4cf2c7c24b45bedb8d8cd8c36ed84ed9477ab0806c4a601c2c5b585"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/frozen_core/d4_detection_rule_freeze_0_1_0.json",
+      "sha256": "991ab9ec59fc325a177b18397380a1e87b31ea19e04ff76a07585a22b6e02708"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/frozen_core/d4_raw_peak_pipeline_0_1_0.py",
+      "sha256": "909ce94e7519f3c10ebe4d874a8ca03697d1d4bee99a0dc54f22ef9a0508be12"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/frozen_core/d5_reciprocal_lattice_pipeline_0_1_0.py",
+      "sha256": "740a5fb62694dd08ab9499ddec7fe834b07f955e61a389d703972f5a52a684fd"
+    },
+    {
+      "path": "methods/baseline_B/runtime/restored/candidate/scripts/frozen_core/d5_reciprocal_rule_freeze_0_1_0.json",
+      "sha256": "16497549cc55344c9a31e9b0e65919a2186f4c1ff87e08b73987bada9343555a"
+    },
+    {
+      "path": "methods/baseline_B/raw_pipeline/build_pilatus_d45_feed.py",
+      "sha256": "8210eaeaf0e3152bbeaffdd62fdb8698fdcf4652ad0952d9ce68590c704ce3dc"
+    },
+    {
+      "path": "methods/baseline_B/raw_pipeline/fixed_d45_successor.py",
+      "sha256": "c4136049734007ad3b5b4d58cb81423181fa1c6b86e201b7cb131bc54add7c26"
+    },
+    {
+      "path": "methods/baseline_B/raw_pipeline/frozen_pilatus_portability.py",
+      "sha256": "a04aadc1b4cf2c7c24b45bedb8d8cd8c36ed84ed9477ab0806c4a601c2c5b585"
+    },
+    {
+      "path": "methods/baseline_B/raw_pipeline/d4_cbf_byte_offset_0_1_0.c",
+      "sha256": "a8c00b9d13e2e2341af3223e12847186c3d66b039fe5d6ae2d6d3377952f054b"
+    },
+    {
+      "path": "methods/baseline_B/raw_pipeline/d4_detection_rule_freeze_0_1_0.json",
+      "sha256": "991ab9ec59fc325a177b18397380a1e87b31ea19e04ff76a07585a22b6e02708"
+    }
+  ],
+  "claim_boundary": "NO_D6C1_D6C2_D7_OR_COSMOLOGY_INFERENCE"
+}

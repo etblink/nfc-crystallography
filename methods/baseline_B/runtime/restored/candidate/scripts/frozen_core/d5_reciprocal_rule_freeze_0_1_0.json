@@ -1,0 +1,107 @@
+{
+  "artifact_id": "NFC_CRYST_9Z6F_D5_RECIPROCAL_RULE_FREEZE_0_1_0",
+  "scientific_scope": "OPEN_DEVELOPMENT_NOT_INDEPENDENT_VALIDATION",
+  "construction_inputs": [
+    "FROZEN_D4_PEAK_CORPUS",
+    "CBF_EMBEDDED_GEOMETRY_HEADERS",
+    "FROZEN_RAW_ARCHIVE_IDENTITY"
+  ],
+  "prohibited_construction_inputs": [
+    "PROCESSED_HKL",
+    "XDS_INPUT_OR_OUTPUT",
+    "KNOWN_CELL",
+    "KNOWN_ORIENTATION_MATRIX",
+    "KNOWN_SPACE_GROUP",
+    "SHELX_INS_RES_CIF_FCF",
+    "SOLVED_STRUCTURE"
+  ],
+  "coordinate_convention": {
+    "pixel_center_offset_from_zero_based_d4_centroid": 0.5,
+    "pixel_size_m": 0.0001,
+    "detector_normal": "NORMALIZE(CROSS(DETECTOR_FAST_AXIS,DETECTOR_SLOW_AXIS))",
+    "detector_point_m": "DISTANCE*NORMAL + PIXEL_SIZE*(X+0.5-BEAM_X)*FAST + PIXEL_SIZE*(Y+0.5-BEAM_Y)*SLOW",
+    "incident_wavevector": "NORMALIZE(INCIDENT_BEAM_VECTOR)/WAVELENGTH_ANGSTROM",
+    "outgoing_wavevector": "NORMALIZE(DETECTOR_POINT)/WAVELENGTH_ANGSTROM",
+    "laboratory_scattering_vector": "OUTGOING_WAVEVECTOR-INCIDENT_WAVEVECTOR",
+    "frame_angle": "START_ANGLE + 0.5*ANGLE_INCREMENT",
+    "sample_orientation": "ROT(OMEGA_AXIS,OMEGA_MID)*ROT(KAPPA_AXIS,KAPPA)*ROT(PHI_AXIS,PHI)",
+    "sample_fixed_scattering_vector": "TRANSPOSE(SAMPLE_ORIENTATION)*LABORATORY_SCATTERING_VECTOR",
+    "reciprocal_units": "CYCLES_PER_ANGSTROM_NO_2PI",
+    "two_pi_alternative": "Q_2PI=2*PI*Q"
+  },
+  "convention_census": {
+    "balanced_peak_cap_per_scan": 1500,
+    "cross_scan_nearest_neighbor_k": 16,
+    "primary_selection_radius_cycles_per_angstrom": 0.003,
+    "rotation_orders": "ALL_SIX_PERMUTATIONS_OF_OMEGA_KAPPA_PHI",
+    "rotation_signs": "ALL_EIGHT_SIGN_TRIPLES",
+    "pixel_center_offsets_tested": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "frame_fractions_tested": [
+      0.0,
+      0.5,
+      1.0
+    ]
+  },
+  "lattice_search": {
+    "primary_validity": "CERTIFIED_POSITIVE_SEPARATION_INTERIOR",
+    "balanced_peak_cap_per_scan": 1000,
+    "nearest_neighbors_per_peak": 15,
+    "difference_norm_min_cycles_per_angstrom": 0.012,
+    "difference_norm_max_cycles_per_angstrom": 0.12,
+    "difference_voxel_width_cycles_per_angstrom": 0.003,
+    "mode_support_fraction_of_maximum": 0.1,
+    "mode_local_radius_voxels": 1.5,
+    "mode_deduplication_radius_cycles_per_angstrom": 0.004,
+    "minimum_pair_sine": 0.1,
+    "minimum_triple_normalized_determinant": 0.05,
+    "integer_refinement_cut_schedule_cycles_per_angstrom": [
+      0.014,
+      0.012,
+      0.01,
+      0.008,
+      0.007,
+      0.006,
+      0.005,
+      0.0045,
+      0.004,
+      0.0035,
+      0.003
+    ],
+    "final_tukey_cutoff_cycles_per_angstrom": 0.012,
+    "final_tukey_iterations": 10,
+    "center_residual_thresholds_cycles_per_angstrom": [
+      0.002,
+      0.003,
+      0.004,
+      0.005,
+      0.006,
+      0.008,
+      0.01
+    ],
+    "formal_compatibility_rule": "CENTER_RESIDUAL_LEQ_MAXIMUM_EIGHT_CORNER_Q_REGION_RADIUS"
+  },
+  "input_tiers": {
+    "PRIMARY_LATTICE_TIER": "CERTIFIED_POSITIVE_SEPARATION_INTERIOR",
+    "SENSITIVITY_TIER": "CERTIFIED_POSITIVE_SEPARATION_EDGE_OR_MASK_ADJACENT",
+    "UNRESOLVED_CHALLENGE_TIER": [
+      "UNRESOLVED_MULTI_MAXIMUM_COMPONENT",
+      "UNRESOLVED_UNCERTAINTY_REGION_OVERLAP"
+    ]
+  },
+  "diagnostic_firewall": {
+    "isolation_proxy_is_not_a_calibrated_false_positive_rate": true,
+    "gap_proxy_is_not_a_calibrated_false_negative_rate": true,
+    "diagnostics_modify_candidate_lattice": false,
+    "diagnostics_delete_peaks": false
+  },
+  "ambiguity_policy": {
+    "unimodular_basis_changes_are_same_lattice": true,
+    "larger_real_space_supercells_are_not_excluded_by_detected_peak_positions_alone": true,
+    "physical_primitivity_requires_separately_licensed_absence_and_completeness_evidence": true,
+    "no_metric_angle_is_snapped_to_a_crystal_system": true
+  }
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or its published results, please cite this repository and the associated methods paper."
+title: "NFC crystallography: raw-only lattice recovery with abstention"
+type: software
+authors:
+  - family-names: Kotler
+    given-names: Evan Thomas
+repository-code: "https://github.com/etblink/nfc-crystallography"
+license: BSD-3-Clause
+version: 0.1.0
+date-released: 2026-07-27

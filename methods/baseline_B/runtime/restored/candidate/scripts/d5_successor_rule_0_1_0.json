@@ -1,0 +1,75 @@
+{
+  "artifact_id": "NFC_CRYST_EXPLORATORY_D5_CONSENSUS_AND_PHASE_SPECIFICITY_RULE_0_1_0",
+  "scientific_scope": "OPEN_EXPLORATORY_D5_SUCCESSOR_CANDIDATE",
+  "candidate_kernel": {
+    "source": "UNCHANGED_FROZEN_D5_0_3_0_SEED_AND_REFINEMENT",
+    "truth_cell_or_orientation_input": false,
+    "special_case_corpus_branches": false
+  },
+  "input_representation": {
+    "source": "FIXED_D45_SUCCESSOR",
+    "minimum_repeat_certified_objects_per_full_or_split_feed": 100,
+    "full_and_split_representations_constructed_independently": true
+  },
+  "primitive_lattice_consensus": {
+    "maximum_integer_transform_deviation": 0.03,
+    "required_absolute_rounded_transform_determinant": 1,
+    "required_pairs": [
+      "FULL_TO_HALF_A",
+      "FULL_TO_HALF_B",
+      "HALF_A_TO_HALF_B"
+    ]
+  },
+  "same_density_phase_specificity": {
+    "residual_cutoff_cycles_per_angstrom": 0.003,
+    "fractional_origin_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "exclude_zero_origin_from_null": true,
+    "null_origin_count": 63,
+    "minimum_zero_minus_null_median_support_fraction": 0.1,
+    "maximum_empirical_rank_p": 0.03125,
+    "required_evaluations": [
+      "FULL_BASIS_ON_FULL",
+      "HALF_A_BASIS_ON_HALF_A",
+      "HALF_B_BASIS_ON_HALF_B",
+      "HALF_A_BASIS_ON_HALF_B_HELD_OUT",
+      "HALF_B_BASIS_ON_HALF_A_HELD_OUT"
+    ],
+    "density_control": "EVERY_NULL_HAS_THE_IDENTICAL_BASIS_DETERMINANT_AND_RECIPROCAL_GRID_DENSITY; ONLY_THE_FRACTIONAL_ORIGIN_IS_SHIFTED"
+  },
+  "primitive_complexity_audit": {
+    "countermodels": "ALL_THREE_DIMENSIONAL_UPPER_HERMITE_NORMAL_FORM_COARSENINGS_WITH_INTEGER_INDEX_2_THROUGH_8",
+    "maximum_countermodel_index": 8,
+    "minimum_countermodel_support_relative_to_selected_basis": 0.95,
+    "countermodel_must_pass_same_phase_specificity_gate": true,
+    "allowed_supported_coarser_countermodel_count": 0,
+    "scientific_role": "REJECT_A_DENSER_RECIPROCAL_GRID_WHEN_A_LOWER_COMPLEXITY_COARSER_LATTICE_RETAINS_THE_SIGNAL"
+  },
+  "decision_precedence": [
+    "INSUFFICIENT_OBJECTS_OR_CANDIDATE_FAILURE",
+    "SPLIT_OR_POOLED_LATTICE_INCONSISTENCY",
+    "PHASE_SPECIFICITY_FAILURE",
+    "SUPPORTED_COARSER_COUNTERMODEL_AMBIGUITY",
+    "LATTICE_RECOVERED"
+  ],
+  "inconsistent_candidate_disposition": {
+    "if_full_phase_specificity_passes": "AMBIGUOUS_LATTICE",
+    "otherwise": "INSUFFICIENT_SIGNAL"
+  },
+  "allowed_outcomes": [
+    "LATTICE_RECOVERED",
+    "AMBIGUOUS_LATTICE",
+    "INSUFFICIENT_SIGNAL"
+  ],
+  "truth_firewall": {
+    "truth_used_for_candidate_generation": false,
+    "truth_used_for_evidence_statistics": false,
+    "truth_used_for_decision": false,
+    "truth_used_only_after_decision_for_scoring": true
+  },
+  "claim_boundary": "EXPLORATORY_SUCCESSOR_CANDIDATE_NOT_A_FROZEN_CONFIRMATORY_METHOD"
+}

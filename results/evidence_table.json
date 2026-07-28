@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "central_claim": "Raw-derived reciprocal representations and the baseline-B candidate-and-abstention stack have demonstrated real-data recovery capability, including one correct prospective transfer, with explicit unresolved sensitivity limits.",
+  "rows": [
+    {
+      "corpus": "9Z6F",
+      "role": "DEVELOPMENT_SPECIMEN_A",
+      "method": "D4.5 / baseline-B lineage",
+      "outcome": "LATTICE_RECOVERED",
+      "interpretation": "Historical development recovery; not out-of-sample evidence."
+    },
+    {
+      "corpus": "9JQ9",
+      "role": "EXPLORATORY_ADVERSE_DIAGNOSTIC",
+      "method": "D4 then frozen D5 / successors",
+      "outcome": "D4_SIGNAL_D5_NOT_ESTABLISHED",
+      "interpretation": "Real D4 spot signal; unstable or unsupported lattice evidence; provenance unresolved."
+    },
+    {
+      "corpus": "6GN2",
+      "role": "DEVELOPMENT_POSITIVE_CONTROL",
+      "method": "D4.5 / baseline-B lineage",
+      "outcome": "LATTICE_RECOVERED",
+      "interpretation": "Public real-data primitive-lattice recovery."
+    },
+    {
+      "corpus": "6GN3 sweep 1",
+      "role": "DEVELOPMENT_POSITIVE_CONTROL",
+      "method": "D4.5 / baseline-B lineage",
+      "outcome": "LATTICE_RECOVERED",
+      "interpretation": "Centroid consolidation causally repaired the input representation."
+    },
+    {
+      "corpus": "6GN3 sweep 2",
+      "role": "DEVELOPMENT_POSITIVE_CONTROL",
+      "method": "D4.5 / baseline-B lineage",
+      "outcome": "LATTICE_RECOVERED",
+      "interpretation": "Centroid consolidation causally repaired the input representation."
+    },
+    {
+      "corpus": "6MFU",
+      "role": "PROSPECTIVE_THEN_DEVELOPMENT",
+      "method": "baseline B predecessor / baseline-B lineage",
+      "outcome": "ABSTENTION_THEN_POSTHOC_RECOVERY",
+      "interpretation": "Archived prospective miss; later finite-scale and index-two diagnosis is development evidence."
+    },
+    {
+      "corpus": "8VTD",
+      "role": "PROSPECTIVE_OUT_OF_SAMPLE",
+      "method": "baseline B",
+      "outcome": "CORRECT_LATTICE_RECOVERED",
+      "interpretation": "First correct prospective primitive-lattice transfer."
+    },
+    {
+      "corpus": "9JZO",
+      "role": "PAIRED_PROSPECTIVE",
+      "method": "baseline B and candidate C",
+      "outcome": "AMBIGUOUS_LATTICE_EXACT_TIE",
+      "interpretation": "Conservative missed recovery; common latent family was primitive-equivalent."
+    },
+    {
+      "corpus": "5V0G",
+      "role": "TRUTH_EXPOSED_DEVELOPMENT",
+      "method": "baseline B",
+      "outcome": "INSUFFICIENT_SIGNAL",
+      "interpretation": "Known positive development corpus missed without a wrong recovery."
+    },
+    {
+      "corpus": "6W61",
+      "role": "STAGED_PROSPECTIVE_D5",
+      "method": "baseline B",
+      "outcome": "INSUFFICIENT_SIGNAL",
+      "interpretation": "Multisweep interface partly developed; truth-free abstention archived."
+    },
+    {
+      "corpus": "6CKT",
+      "role": "PREEXECUTION_EXCLUSION",
+      "method": "none",
+      "outcome": "DIRECT_ORIENTATION_GATE_FAILURE",
+      "interpretation": "No NFC result; now a conventional-gate development corpus."
+    },
+    {
+      "corpus": "6TPI",
+      "role": "PREEXECUTION_EXCLUSION",
+      "method": "none",
+      "outcome": "DIRECT_ORIENTATION_GATE_FAILURE",
+      "interpretation": "No NFC result; now a conventional-gate development corpus."
+    }
+  ],
+  "claim_boundaries": [
+    "CANDIDATE_C_INCREMENTAL_VALUE_NOT_ESTABLISHED",
+    "D6C1_THROUGH_D7_TRANSFER_NOT_ESTABLISHED",
+    "INDEPENDENT_EXTERNAL_REPRODUCTION_NOT_ESTABLISHED",
+    "NFC_AS_COSMOLOGY_OR_THEORY_OF_EVERYTHING_NOT_ESTABLISHED"
+  ]
+}

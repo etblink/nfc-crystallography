@@ -1,0 +1,167 @@
+{
+  "artifact_id": "NFC_CRYST_D5_FIXED_CAUCHY_PHASE_FULL_STACK_INTEGRATION_PROTOCOL_0_1_0",
+  "scientific_scope": "OPEN_EXPLORATORY_D45_D5_DECISION_COMPONENT_INTEGRATION",
+  "scientific_question": "Can the fixed 0.003 A^-1 cutoff-free Cauchy origin score replace the hard-neighborhood phase-specificity gate inside the complete archived multiscale and bidirectional D5 decision stack while preserving established recoveries, structured abstentions, complexity rejection, and the prospective 8VTD result?",
+  "controlling_predecessors": [
+    {
+      "artifact": "NFC_CRYST_D5_CUTOFF_FREE_ROBUST_PERIODIC_PREDICTIVE_SCORE_EVALUATION_0_1_0.zip",
+      "zip_sha256": "163fe3d3dcd826afedb76a6301b691575c52a5e76d11622331f1d3e59e2040b7",
+      "accepted_result": "CUTOFF_FREE_PERIODIC_ORIGIN_SIGNAL_SUPPORTED_ON_FIXED_POSITIVE_CANDIDATES_BUT_OBJECT_SPECIFIC_FORMAL_SCALE_WEIGHTING_NOT_SUPPORTED"
+    },
+    {
+      "artifact": "NFC_CRYST_D5_CROSS_FITTED_CORPUS_SCALE_AND_FORMAL_SCALE_ASSIGNMENT_PERMUTATION_DIAGNOSTIC_0_1_0.zip",
+      "zip_sha256": "2cbedd4094f9ea4c4ffffe93158b664002834fe4c4179c394da6de75356679c1",
+      "accepted_result": "OBJECT_SCALE_ASSIGNMENT_INFORMATION_PRESENT_BUT_CURRENT_WEIGHTING_UNSUPPORTED"
+    }
+  ],
+  "source_bindings": {
+    "case_roster": {
+      "path": "lower_floor_ablation_work/CASE_ROSTER.json",
+      "sha256": "67a875d2c33650ac9f8cf37427590d0ba6e3942842494bc733f7ca853151f9e2"
+    },
+    "archived_a0_full_evaluation": {
+      "path": "lower_floor_ablation_work/evaluations/FULL_EVALUATION_A0.json",
+      "sha256": "ee69719725e07c8118dd37cdc874a9bd051d94153cd0dd3c99e489b120a64a91"
+    },
+    "multiscale_bidirectional_evaluator": {
+      "path": "rebuild/evaluate.py",
+      "sha256": "2fe1c017d287ee7cb24abb8c8c7cc100f46c72c24f5b38b6ad0654b456a06002"
+    },
+    "multiscale_bidirectional_rule": {
+      "path": "rebuild/d5_multiscale_bidirectional_rule_0_1_0.json",
+      "sha256": "9ae165ca3c32cb0d67079291014cac5101617f880384acfa1a554d61e26402ec"
+    },
+    "fixed_d5_successor_evaluator": {
+      "path": "restored/candidate/scripts/evaluate_d5_successor.py",
+      "sha256": "0f142754f11e0703642a304f74452dde9233ffb4073709afe206b8d07ddec2f5"
+    },
+    "fixed_d5_successor_rule": {
+      "path": "restored/candidate/scripts/d5_successor_rule_0_1_0.json",
+      "sha256": "d1bfb1f5018d032d2803e08c0146a3ac5d9b7b06bbd3337698ae17675562c365"
+    },
+    "frozen_d5_kernel_rule": {
+      "path": "restored/candidate/scripts/frozen_core/d5_reciprocal_rule_freeze_0_1_0.json",
+      "sha256": "16497549cc55344c9a31e9b0e65919a2186f4c1ff87e08b73987bada9343555a"
+    },
+    "portability_source": {
+      "path": "restored/candidate/scripts/pilatus_portability.py",
+      "sha256": "a04aadc1b4cf2c7c24b45bedb8d8cd8c36ed84ed9477ab0806c4a601c2c5b585"
+    }
+  },
+  "evaluation_set": {
+    "case_count": 43,
+    "source": "the complete fixed lower-floor roster, evaluated only with the archived A0 floor ladder",
+    "case_groups": [
+      "inherited real controls",
+      "inherited synthetic positive and adverse controls",
+      "6MFU developmental alias case",
+      "new finite-index alias controls",
+      "8VTD prospective comparator",
+      "5V0G development full and series cases",
+      "6W61 staged full and series cases"
+    ],
+    "new_public_corpus_access": false,
+    "processed_reflection_access": false
+  },
+  "baseline_arm": {
+    "name": "ARCHIVED_HARD_NEIGHBORHOOD_A0",
+    "source": "the hash-bound archived A0 full evaluation",
+    "exact_replay_required": true,
+    "seed_floors_cycles_per_angstrom": [
+      0.012,
+      0.009,
+      0.006
+    ]
+  },
+  "intervention_arm": {
+    "name": "FIXED_CAUCHY_0P003_FULL_STACK",
+    "only_changed_scientific_component": "same-density phase-specificity functional",
+    "periodic_score": {
+      "name": "CAUCHY_AFFINITY",
+      "definition": "mean_i 1/(1+(r_i/0.003)^2)",
+      "scale_cycles_per_angstrom": 0.003,
+      "hard_residual_cutoff": null,
+      "probability_or_likelihood_claim": false,
+      "calibrated_uncertainty_claim": false
+    },
+    "origin_family": {
+      "zero_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nulls": "the same 63 Cartesian quarter-cell origins from {0,0.25,0.5,0.75}^3 excluding zero",
+      "matched_basis_determinant_and_complexity": true
+    },
+    "phase_pass": {
+      "rule": "zero-origin Cauchy affinity must exceed every null-origin affinity by more than max(1e-15, abs(zero_score)*1e-12)",
+      "minimum_effect_margin": null,
+      "unique_first_required": true
+    },
+    "complexity_audit_integration": {
+      "countermodel_relative_support": "unchanged hard 0.003 A^-1 zero-origin support ratio",
+      "countermodel_phase_gate": "fixed Cauchy unique-first phase rule",
+      "HNF_range": "unchanged integer index 2 through 8"
+    }
+  },
+  "unchanged_components": [
+    "fixed D4.5 feed identities",
+    "candidate generation and integer refinement",
+    "A0 seed floors 0.012, 0.009, and 0.006 A^-1",
+    "minimum two-scale persistence",
+    "full and independent half construction",
+    "primitive-basis split consensus",
+    "hard 0.003 A^-1 paired support gains for index-two completions",
+    "paired exact-binomial significance",
+    "seven bidirectional index-two completion branches",
+    "strong and weak completion gates other than their phase subgate",
+    "hard-support HNF complexity ratios",
+    "family clustering and finite-index suppression",
+    "single-scale and weak-conflict ambiguity precedence",
+    "INSUFFICIENT_SIGNAL and AMBIGUOUS_LATTICE semantics",
+    "truth-free decision followed by postdecision scoring"
+  ],
+  "predeclared_checks": {
+    "baseline_identity": "all 43 archived A0 decisions, reasons, correctness fields, and incorrect-recovery flags must exactly match their bound source",
+    "established_positive_preservation": "every physically correct A0 LATTICE_RECOVERED case must remain a physically correct LATTICE_RECOVERED case",
+    "adverse_safety": "no recovery-prohibited case may become LATTICE_RECOVERED",
+    "prospective_comparator": "8VTD must remain a correct primitive-lattice recovery",
+    "unresolved_adverse_case": "9JQ9 must remain an abstention",
+    "historical_boundary": "intervention decisions are exploratory counterfactual results and do not rewrite any archived decision",
+    "new_positive_gains": "additional correct recovery among A0-abstained recovery-required cases is reported but is not required for support"
+  },
+  "principal_outcome_precedence": [
+    {
+      "condition": "source, protocol, baseline, or truth-firewall violation",
+      "outcome": "FULL_STACK_CAUCHY_INTEGRATION_PROTOCOL_DEVIATION"
+    },
+    {
+      "condition": "one or more recovery-prohibited cases are recovered, or 8VTD becomes wrong/abstains, or any physically correct A0 recovery becomes wrong/abstains",
+      "outcome": "FULL_STACK_CAUCHY_PHASE_COMPONENT_NOT_SUPPORTED"
+    },
+    {
+      "condition": "all established correct recoveries and all adverse abstentions are preserved, and at least one A0-abstained recovery-required case becomes a correct recovery",
+      "outcome": "FULL_STACK_CAUCHY_PHASE_COMPONENT_SUPPORTED_WITH_ADDITIONAL_DEVELOPMENT_RECOVERY"
+    },
+    {
+      "condition": "all established correct recoveries and all adverse abstentions are preserved, with no additional correct recovery",
+      "outcome": "FULL_STACK_CAUCHY_PHASE_COMPONENT_SUPPORTED_AS_DECISION_COMPATIBLE_SUBSTITUTION"
+    },
+    {
+      "condition": "none of the higher-precedence conditions",
+      "outcome": "FULL_STACK_CAUCHY_PHASE_COMPONENT_MIXED_OR_UNRESOLVED"
+    }
+  ],
+  "prohibitions": [
+    "No scale, kernel, origin-family, tie-tolerance, floor, persistence, split, completion, complexity, or decision-threshold sweep.",
+    "No object-specific formal-scale weighting.",
+    "No enriched 5V0G or 6W61 replay.",
+    "No new corpus access.",
+    "No candidate or result-based special case.",
+    "No truth cell or orientation before decision.",
+    "No historical outcome rewrite.",
+    "No method 0.3.0 change.",
+    "No D6c1 through D7 inference.",
+    "No confirmatory, independent-validation, or NFC-ToE claim."
+  ]
+}

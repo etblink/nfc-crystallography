@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "scope": "ROLE_AND_EVIDENCE_CATALOG_NOT_A_COMPLETE_DOWNLOAD_MANIFEST",
+  "corpora": [
+    {
+      "identifier": "9Z6F",
+      "role": "METHOD_DEVELOPMENT_SPECIMEN_A",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "9JQ9",
+      "role": "ADVERSE_EXPLORATORY_DIAGNOSTIC",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "6GN2",
+      "role": "PUBLIC_GEOMETRIC_POSITIVE_CONTROL",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "6GN3",
+      "role": "PUBLIC_GEOMETRIC_POSITIVE_CONTROL_AND_CAUSAL_ABLATION",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "6MFU",
+      "role": "PROSPECTIVE_ABSTENTION_THEN_POSTHOC_ALIAS_DEVELOPMENT",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "5V0G",
+      "role": "TRUTH_EXPOSED_DEVELOPMENT_POSITIVE_CONTROL",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "6W61",
+      "role": "STAGED_MULTISWEEP_PROSPECTIVE_ABSTENTION_THEN_DEVELOPMENT",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "6CKT",
+      "role": "CONVENTIONAL_GATE_DEVELOPMENT_AFTER_PREEXECUTION_EXCLUSION",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "6TPI",
+      "role": "CONVENTIONAL_GATE_DEVELOPMENT_AFTER_PREEXECUTION_EXCLUSION",
+      "confirmation_eligible": false
+    }
+  ]
+}
