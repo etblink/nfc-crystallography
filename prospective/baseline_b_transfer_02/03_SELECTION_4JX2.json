@@ -1,0 +1,41 @@
+{
+  "artifact_id": "NFC_CRYST_BASELINE_B_PROSPECTIVE_TRANSFER_02_SELECTION_4JX2_0_1_0",
+  "selected_at_utc": "2026-07-28T06:44:28Z",
+  "intake_contract_sha256": "23f8faee47fbb251e0c42fa5ae79aa9253acc5fd1df44be3bd46feafb0d6d84f",
+  "query_response_sha256": "55de73329438fc251da781c5a711fd750c7bb1ac608a7ca0754a1d1ba28d779a",
+  "ordered_predecessors": [
+    {
+      "identifier": "9JZO",
+      "disposition": "EXCLUDED_PRIOR_PROSPECTIVE_AND_DEVELOPMENT_CORPUS"
+    },
+    {
+      "identifier": "6CKT",
+      "disposition": "EXCLUDED_PRIOR_GATE_DEVELOPMENT_CORPUS"
+    },
+    {
+      "identifier": "4G2A",
+      "disposition": "PREEXECUTION_UNSUPPORTED_FIXED_RAW_INTERFACE"
+    }
+  ],
+  "selected_candidate": {
+    "public_identifier": "IRRMC_JCSG_SP19248A_4JX2",
+    "raw_archive_url": "https://data.proteindiffraction.org/jcsg/deposited/psi_biology/2013/SP19248A_4jx2.tz",
+    "published_content_length_bytes": 2236189235,
+    "published_etag": "85498a33-5176a22f4e400",
+    "published_last_modified": "Mon, 01 Jun 2015 00:45:04 GMT",
+    "selection_status": "SELECTED_FOR_PREEXECUTION_TECHNICAL_INTAKE"
+  },
+  "selection_firewall": {
+    "expected_nfc_performance_used": false,
+    "prior_nfc_execution": false,
+    "conventional_cell_or_orientation_consulted": false,
+    "conventional_space_group_consulted": false,
+    "processed_reflection_values_consulted": false,
+    "pdb_or_structure_page_opened": false,
+    "d4_5_feed_computed": false,
+    "baseline_b_executed": false,
+    "candidate_c_executed": false
+  },
+  "scientific_test_consumed": false,
+  "next_action": "DOWNLOAD_HASH_AND_FIXED_INTERFACE_PREFLIGHT"
+}
