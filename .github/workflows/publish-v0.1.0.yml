@@ -1,0 +1,71 @@
+name: Publish v0.1.0
+
+on:
+  push:
+    branches:
+      - release/v0.1.0-publisher
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: e890a36a720f8babe6b1c69690c60368e9e3585b
+          fetch-depth: 0
+      - name: Build and verify deterministic source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          git archive --format=tar --prefix=nfc-crystallography-0.1.0/ HEAD \
+            | gzip -n -9 > nfc-crystallography-v0.1.0.tar.gz
+          printf '%s  %s\n' \
+            'c3415f65a86e463aac177889779dc1026c273368da99cbceec7ab9bb6755a1a1' \
+            'nfc-crystallography-v0.1.0.tar.gz' > SHA256SUMS
+          sha256sum -c SHA256SUMS
+      - name: Write release notes
+        shell: bash
+        env:
+          RELEASE_NOTES: |
+            First public exploratory methods release of the raw-derived D4.5/D5 lattice recovery-or-abstention framework.
+
+            Release identity
+            - Merge commit: `e890a36a720f8babe6b1c69690c60368e9e3585b`
+            - Git tree: `e915d1d8d6220360446a4c9cead618307fc4e8ef`
+            - Deterministic source archive SHA-256: `c3415f65a86e463aac177889779dc1026c273368da99cbceec7ab9bb6755a1a1`
+            - Baseline-B release binding: `ba18310a04a45c13f1fdf100599c77f2da9fa8ba2f43ec9e942719871b6edf48`
+            - 8VTD truth-free decision digest: `18d8664318f9d27964a4abe179841acf34a2f4bb50e6b836e034ffb154afe249`
+            - Tested Python versions: 3.10 and 3.12
+
+            Scientific status
+            - Baseline B is the controlling released method.
+            - Candidate C remains an experimental compatible alternative with no established incremental benefit.
+            - One correct prospective geometric transfer is preserved on 8VTD.
+            - The 9JZO prospective result is a conservative missed recovery with a latent primitive-equivalent family.
+            - Historical 6CKT and 6TPI pre-execution exclusions remain exclusions; the repaired basis-invariant gate creates no retroactive NFC result.
+
+            Claim boundary
+            This is a first public exploratory methods release. It is not a production crystallographic indexer, an independently validated method, a complete D4-D7 pipeline, or evidence for NFC as a cosmology or Theory of Everything.
+
+            Known limitations
+            - Out-of-sample geometric transfer is supported by one correct prospective recovery, not a broad performance census.
+            - D6c1-D7 transfer is unestablished.
+            - Independent external software reproduction is unestablished.
+            - Public raw-frame replays require external archives and a suitable DIALS/dxtbx runtime.
+        run: printf '%s\n' "$RELEASE_NOTES" > RELEASE_NOTES.md
+      - name: Create immutable GitHub release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release create v0.1.0 \
+            --repo "$GITHUB_REPOSITORY" \
+            --target e890a36a720f8babe6b1c69690c60368e9e3585b \
+            --title 'v0.1.0 — First public exploratory methods release' \
+            --notes-file RELEASE_NOTES.md \
+            nfc-crystallography-v0.1.0.tar.gz \
+            SHA256SUMS
