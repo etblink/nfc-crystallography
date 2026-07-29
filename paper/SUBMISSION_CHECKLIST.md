@@ -61,8 +61,8 @@ invented in the scientific manuscript.
   `LATTICE_RECOVERED / ONE_PERSISTENT_FAMILY_SURVIVES` with decision digest
   `18d8664318f9d27964a4abe179841acf34a2f4bb50e6b836e034ffb154afe249`.
 - [x] Build wheel and source distribution.
-- [ ] Install the wheel in a clean Python 3.10 environment and a clean Python
-  3.12 environment.
+- [x] Install and verify the wheel under Python 3.10 and Python 3.12 in GitHub
+  Actions run `30415938565`.
 - [x] Verify the raw-builder imports and all 21 frozen method sources from an
   isolated installed wheel under Python 3.12.
 - [ ] Record the final manuscript commit and Git tree in the submission
