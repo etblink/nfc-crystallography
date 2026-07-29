@@ -108,6 +108,8 @@ See [REPRODUCING.md](REPRODUCING.md) for the full path.
 
 The version-independent archival identifier is
 [Zenodo concept DOI 10.5281/zenodo.21639283](https://doi.org/10.5281/zenodo.21639283).
+The exact `v0.1.1` archival record is
+[Zenodo version DOI 10.5281/zenodo.21654414](https://doi.org/10.5281/zenodo.21654414).
 
 ## Methods and comparators
 

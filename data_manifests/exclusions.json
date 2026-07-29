@@ -10,6 +10,17 @@
       "reason": "PORTABILITY_DEVELOPMENT_AND_ADVERSE_DIAGNOSTIC"
     },
     {
+      "identifier": "4G2A",
+      "reason": "PREEXECUTION_UNSUPPORTED_FIXED_RAW_INTERFACE_NO_NFC_RUN",
+      "raw_archive": {
+        "url": "https://data.proteindiffraction.org/jcsg/deposited/psi_biology/2012/SP19411A_4g2a.tz",
+        "size_bytes": 2264682763,
+        "sha256": "efc2cf1269207c417efb8841f272b83fd858095b1ac9b6015fe87fdadfde7db9"
+      },
+      "frame_count": 578,
+      "technical_reason": "SLS_1.0_HEADER_AND_X_CW_ROTATION_AXIS_UNSUPPORTED_BY_RELEASED_FIXED_RAW_INTERFACE"
+    },
+    {
       "identifier": "6CKT",
       "reason": "PREEXECUTION_DIRECT_ORIENTATION_GATE_EXCLUSION_NO_NFC_RUN"
     },
@@ -18,5 +29,5 @@
       "reason": "PREEXECUTION_DIRECT_ORIENTATION_GATE_EXCLUSION_NO_NFC_RUN"
     }
   ],
-  "note": "6CKT and 6TPI are now gate-development corpora; their exclusions remain historical facts."
+  "note": "4G2A, 6CKT, and 6TPI were excluded before NFC execution. 6CKT and 6TPI are now gate-development corpora; all exclusions remain historical facts."
 }

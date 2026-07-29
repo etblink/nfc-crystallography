@@ -63,11 +63,17 @@ python scripts/download_public_inputs.py \
   --destination downloads/8vtd.tar.bz2
 ```
 
-The 8VTD and 9JZO manifests contain the whole public-archive SHA-256 values
-observed during their completed acquisitions. A manifest without a whole-file
-SHA-256 is not accepted by the convenience downloader; dataset-specific
-source-file hashes remain preserved in the historical releases as an
-additional layer.
+The 8VTD, 9JZO, and 4JX2 manifests contain the whole public-archive SHA-256
+values observed during their completed acquisitions. A manifest without a
+whole-file SHA-256 is not accepted by the convenience downloader;
+dataset-specific source-file hashes remain preserved in the historical
+releases as an additional layer.
+
+The complete 4JX2 truth-free commitment and post-commitment scoring record are
+under `prospective/baseline_b_transfer_02/`. Replaying those files must preserve
+the committed `INSUFFICIENT_SIGNAL / NO_PERSISTENT_FAMILY` result; the
+primitive-equivalent family visible at one tested scale is diagnostic and is
+not a recovered decision.
 
 ## DIALS note
 

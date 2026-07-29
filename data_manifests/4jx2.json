@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "public_identifier": "IRRMC_JCSG_SP19248A_4JX2",
+  "role": "BASELINE_B_ONLY_PROSPECTIVE_TRANSFER",
+  "repository": "Integrated Resource for Reproducibility in Macromolecular Crystallography",
+  "download": {
+    "url": "https://data.proteindiffraction.org/jcsg/deposited/psi_biology/2013/SP19248A_4jx2.tz",
+    "size_bytes": 2236189235,
+    "sha256": "1d833cd501fd86dd846f3a7eeb22062eb9917012a1c1cc37fc6800596c3c504a",
+    "verification": "sha256"
+  },
+  "archive_inventory": {
+    "member_count": 564,
+    "native_cbf_frame_count": 542,
+    "header_convention": "PILATUS_1.2",
+    "encoding": "x-CBF_BYTE_OFFSET"
+  },
+  "method": {
+    "public_release": "v0.1.1",
+    "baseline_b_archive_sha256": "ba18310a04a45c13f1fdf100599c77f2da9fa8ba2f43ec9e942719871b6edf48",
+    "candidate_c_executed": false
+  },
+  "truth_free_commitment": {
+    "file": "prospective/baseline_b_transfer_02/06_4JX2_BASELINE_B_TRUTH_FREE_DECISION_COMMITMENT.json",
+    "file_sha256": "7e9e93a0a3c8c77708b6820f8dc064c2fe66fa9d7dedf808cb74f14023a1ed1a",
+    "semantic_sha256": "2aac64f387f036f887146dc0fb1b5603dba680c1a18fbedf76b87be720fd6609",
+    "decision": "INSUFFICIENT_SIGNAL",
+    "reason": "NO_PERSISTENT_FAMILY"
+  },
+  "postcommitment_scoring": {
+    "classification": "CONSERVATIVE_MISSED_RECOVERY",
+    "diagnostic": "DIRECT_0_006_INVERSE_ANGSTROM_FAMILY_PRIMITIVE_EQUIVALENT_ACROSS_FULL_AND_SPLITS",
+    "baseline_b_decision_promoted": false
+  },
+  "information_boundary": "CONVENTIONAL_CELL_AND_ORIENTATION_REVEALED_AFTER_DECISION_COMMITMENT",
+  "observation_level_reduction": "NO_PUBLIC_REPRODUCIBLE_OBJECT_ESTABLISHED"
+}

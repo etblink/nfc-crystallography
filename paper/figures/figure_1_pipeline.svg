@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Baseline B crystallographic processing pipeline</title>
+  <desc id="desc">Raw rotation images are converted to frame-local D4 detections, repeat-certified D4.5 reciprocal centroids, multiscale D5 candidate families, and a recovery or abstention decision.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,7 L0,14 z" fill="#213547"/>
+    </marker>
+    <marker id="smallarrow" markerWidth="28" markerHeight="28" refX="24" refY="14" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L28,14 L0,28 z" fill="#213547"/>
+    </marker>
+    <style>
+      .stage { stroke:#213547; stroke-width:5; rx:32; }
+      .heading { font:700 54px Arial, Helvetica, sans-serif; fill:#17232e; }
+      .body { font:400 36px Arial, Helvetica, sans-serif; fill:#17232e; }
+      .small { font:400 31px Arial, Helvetica, sans-serif; fill:#17232e; }
+      .arrow { stroke:#213547; stroke-width:9; fill:none; marker-end:url(#arrow); }
+      .gate { stroke:#213547; stroke-width:4; rx:24; }
+      .outcome { stroke-width:6; rx:30; }
+    </style>
+  </defs>
+  <rect width="2400" height="1350" fill="#ffffff"/>
+
+  <rect class="stage" x="70" y="190" width="420" height="420" fill="#e8f2f8"/>
+  <text class="heading" x="280" y="275" text-anchor="middle">Raw images</text>
+  <rect x="150" y="335" width="245" height="165" rx="14" fill="#ffffff" stroke="#0072b2" stroke-width="6"/>
+  <circle cx="203" cy="385" r="10" fill="#17232e"/>
+  <circle cx="252" cy="431" r="13" fill="#17232e"/>
+  <circle cx="315" cy="380" r="8" fill="#17232e"/>
+  <circle cx="350" cy="452" r="11" fill="#17232e"/>
+  <circle cx="216" cy="472" r="7" fill="#17232e"/>
+  <text class="small" x="280" y="555" text-anchor="middle">Native PILATUS</text>
+  <text class="small" x="280" y="594" text-anchor="middle">rotation frames</text>
+
+  <path class="arrow" d="M510 400 H625"/>
+
+  <rect class="stage" x="650" y="190" width="420" height="420" fill="#fff2d6"/>
+  <text class="heading" x="860" y="275" text-anchor="middle">D4</text>
+  <text class="body" x="860" y="345" text-anchor="middle">Frame-local</text>
+  <text class="body" x="860" y="392" text-anchor="middle">robust detections</text>
+  <g fill="#e69f00" stroke="#17232e" stroke-width="3">
+    <circle cx="760" cy="475" r="18"/>
+    <circle cx="827" cy="514" r="15"/>
+    <circle cx="902" cy="459" r="20"/>
+    <circle cx="972" cy="522" r="14"/>
+  </g>
+  <text class="small" x="860" y="584" text-anchor="middle">No cell or orientation</text>
+
+  <path class="arrow" d="M1090 400 H1205"/>
+
+  <rect class="stage" x="1230" y="190" width="470" height="420" fill="#dff3ec"/>
+  <text class="heading" x="1465" y="275" text-anchor="middle">D4.5</text>
+  <text class="body" x="1465" y="345" text-anchor="middle">Repeat-certified</text>
+  <text class="body" x="1465" y="392" text-anchor="middle">3D centroids</text>
+  <g stroke="#009e73" stroke-width="7" fill="none">
+    <path d="M1335 492 L1410 462 L1490 496 L1575 451"/>
+    <path d="M1370 544 L1450 520 L1530 549"/>
+  </g>
+  <g fill="#009e73" stroke="#17232e" stroke-width="3">
+    <circle cx="1335" cy="492" r="13"/><circle cx="1410" cy="462" r="13"/>
+    <circle cx="1490" cy="496" r="13"/><circle cx="1575" cy="451" r="13"/>
+    <circle cx="1370" cy="544" r="13"/><circle cx="1450" cy="520" r="13"/>
+    <circle cx="1530" cy="549" r="13"/>
+  </g>
+  <text class="small" x="1465" y="584" text-anchor="middle">Scan-local association</text>
+
+  <path class="arrow" d="M1720 400 H1835"/>
+
+  <rect class="stage" x="1860" y="190" width="470" height="420" fill="#f3e7f0"/>
+  <text class="heading" x="2095" y="275" text-anchor="middle">D5</text>
+  <text class="body" x="2095" y="345" text-anchor="middle">Multiscale primitive</text>
+  <text class="body" x="2095" y="392" text-anchor="middle">candidate families</text>
+  <g stroke="#cc79a7" stroke-width="5" fill="none">
+    <path d="M1970 485 h250 M1970 535 h250"/>
+    <path d="M2010 445 v130 M2070 445 v130 M2130 445 v130 M2190 445 v130"/>
+  </g>
+  <text class="small" x="2095" y="584" text-anchor="middle">Three reciprocal floors</text>
+
+  <path d="M2095 635 V700 H465" stroke="#213547" stroke-width="8" fill="none"/>
+  <path class="arrow" d="M465 700 V742"/>
+  <path class="arrow" d="M915 700 V742"/>
+  <path class="arrow" d="M1380 700 V742"/>
+  <path class="arrow" d="M1860 700 V742"/>
+
+  <rect class="gate" x="270" y="760" width="390" height="150" fill="#f4f6f7"/>
+  <text class="body" x="465" y="820" text-anchor="middle">Split consensus</text>
+  <text class="small" x="465" y="866" text-anchor="middle">full / half A / half B</text>
+
+  <rect class="gate" x="720" y="760" width="390" height="150" fill="#f4f6f7"/>
+  <text class="body" x="915" y="820" text-anchor="middle">Held-out phase</text>
+  <text class="small" x="915" y="866" text-anchor="middle">cross-half prediction</text>
+
+  <rect class="gate" x="1170" y="760" width="420" height="150" fill="#f4f6f7"/>
+  <text class="body" x="1380" y="820" text-anchor="middle">Finite-index audit</text>
+  <text class="small" x="1380" y="866" text-anchor="middle">competing completions</text>
+
+  <rect class="gate" x="1650" y="760" width="420" height="150" fill="#f4f6f7"/>
+  <text class="body" x="1860" y="820" text-anchor="middle">Complexity audit</text>
+  <text class="small" x="1860" y="866" text-anchor="middle">lower-complexity models</text>
+
+  <path d="M465 930 V965 H1860 V930" stroke="#213547" stroke-width="8" fill="none"/>
+  <path d="M915 930 V965 M1380 930 V965" stroke="#213547" stroke-width="8" fill="none"/>
+  <path d="M1165 965 L865 1020" stroke="#213547" stroke-width="8" fill="none" marker-end="url(#smallarrow)"/>
+  <path d="M1165 965 L1535 1020" stroke="#213547" stroke-width="8" fill="none" marker-end="url(#smallarrow)"/>
+
+  <rect class="outcome" x="610" y="1030" width="510" height="170" fill="#dff3ec" stroke="#009e73"/>
+  <text class="heading" x="865" y="1100" text-anchor="middle">RECOVER</text>
+  <text class="small" x="865" y="1152" text-anchor="middle">one persistent family survives</text>
+
+  <rect class="outcome" x="1280" y="1030" width="510" height="170" fill="#f8e5e5" stroke="#a43b3b"/>
+  <text class="heading" x="1535" y="1100" text-anchor="middle">ABSTAIN</text>
+  <text class="small" x="1535" y="1152" text-anchor="middle">ambiguous or insufficient evidence</text>
+</svg>

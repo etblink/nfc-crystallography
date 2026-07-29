@@ -80,6 +80,13 @@
       "interpretation": "Multisweep interface partly developed; truth-free abstention archived."
     },
     {
+      "corpus": "4G2A",
+      "role": "PREEXECUTION_EXCLUSION",
+      "method": "none",
+      "outcome": "UNSUPPORTED_FIXED_RAW_INTERFACE",
+      "interpretation": "No NFC result; all 578 frames used an unsupported SLS_1.0 / X, CW interface."
+    },
+    {
       "corpus": "6CKT",
       "role": "PREEXECUTION_EXCLUSION",
       "method": "none",

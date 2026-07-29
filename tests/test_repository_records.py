@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 
@@ -21,6 +22,8 @@ def test_evidence_table_preserves_claim_boundaries() -> None:
     table = markdown_table(evidence)
     assert "8VTD" in table
     assert "9JZO" in table
+    assert "4JX2" in table
+    assert "4G2A" in table
     assert "6CKT" in table
 
 
@@ -51,3 +54,49 @@ def test_repository_layout_replayed_8vtd_decision() -> None:
     comparison = result["comparison_to_archived_result"]
     assert comparison["nonfloating_value_mismatches"] == 0
     assert comparison["maximum_absolute_floating_difference"] < 3e-15
+
+
+def test_4jx2_manifest_preserves_prospective_commitment() -> None:
+    manifest = json.loads(
+        (REPOSITORY_ROOT / "data_manifests/4jx2.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert (
+        manifest["download"]["sha256"]
+        == "1d833cd501fd86dd846f3a7eeb22062eb9917012a1c1cc37fc6800596c3c504a"
+    )
+    commitment = manifest["truth_free_commitment"]
+    commitment_path = REPOSITORY_ROOT / commitment["file"]
+    commitment_record = json.loads(commitment_path.read_text(encoding="utf-8"))
+    assert hashlib.sha256(commitment_path.read_bytes()).hexdigest() == commitment[
+        "file_sha256"
+    ]
+    assert commitment["decision"] == "INSUFFICIENT_SIGNAL"
+    assert commitment["reason"] == "NO_PERSISTENT_FAMILY"
+    assert (
+        commitment["semantic_sha256"]
+        == "2aac64f387f036f887146dc0fb1b5603dba680c1a18fbedf76b87be720fd6609"
+    )
+    assert commitment_record["semantic_sha256"] == commitment["semantic_sha256"]
+    assert commitment_record["conventional_truth_accessed"] is False
+    assert manifest["method"]["candidate_c_executed"] is False
+    scoring = manifest["postcommitment_scoring"]
+    assert scoring["classification"] == "CONSERVATIVE_MISSED_RECOVERY"
+    assert scoring["baseline_b_decision_promoted"] is False
+
+
+def test_4g2a_remains_a_preexecution_exclusion() -> None:
+    exclusions = json.loads(
+        (REPOSITORY_ROOT / "data_manifests/exclusions.json").read_text(
+            encoding="utf-8"
+        )
+    )["exclusions"]
+    exclusion = next(
+        item for item in exclusions if item["identifier"] == "4G2A"
+    )
+    assert (
+        exclusion["reason"]
+        == "PREEXECUTION_UNSUPPORTED_FIXED_RAW_INTERFACE_NO_NFC_RUN"
+    )
+    assert exclusion["frame_count"] == 578
