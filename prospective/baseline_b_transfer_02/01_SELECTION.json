@@ -1,0 +1,42 @@
+{
+  "artifact_id": "NFC_CRYST_BASELINE_B_PROSPECTIVE_TRANSFER_02_SELECTION_0_1_0",
+  "selected_at_utc": "2026-07-28T06:33:08Z",
+  "intake_contract_sha256": "23f8faee47fbb251e0c42fa5ae79aa9253acc5fd1df44be3bd46feafb0d6d84f",
+  "discovery": {
+    "source": "Protein Diffraction public search",
+    "query": "PILATUS PHI",
+    "query_url": "https://proteindiffraction.org/search/?q=PILATUS%20PHI",
+    "query_response_sha256": "55de73329438fc251da781c5a711fd750c7bb1ac608a7ca0754a1d1ba28d779a"
+  },
+  "ordered_predecessors": [
+    {
+      "identifier": "9JZO",
+      "disposition": "EXCLUDED_PRIOR_PROSPECTIVE_AND_DEVELOPMENT_CORPUS"
+    },
+    {
+      "identifier": "6CKT",
+      "disposition": "EXCLUDED_PRIOR_GATE_DEVELOPMENT_CORPUS"
+    }
+  ],
+  "selected_candidate": {
+    "public_identifier": "IRRMC_JCSG_SP19411A_4G2A",
+    "raw_archive_url": "https://data.proteindiffraction.org/jcsg/deposited/psi_biology/2012/SP19411A_4g2a.tz",
+    "published_content_length_bytes": 2264682763,
+    "published_etag": "86fc510b-517b788ac4ac0",
+    "published_last_modified": "Thu, 04 Jun 2015 21:05:23 GMT",
+    "selection_status": "SELECTED_FOR_PREEXECUTION_TECHNICAL_INTAKE"
+  },
+  "selection_firewall": {
+    "expected_nfc_performance_used": false,
+    "prior_nfc_execution": false,
+    "conventional_cell_or_orientation_consulted": false,
+    "conventional_space_group_consulted": false,
+    "processed_reflection_values_consulted": false,
+    "pdb_or_structure_page_opened": false,
+    "d4_5_feed_computed": false,
+    "baseline_b_executed": false,
+    "candidate_c_executed": false
+  },
+  "scientific_test_consumed": false,
+  "next_action": "DOWNLOAD_HASH_AND_FIXED_INTERFACE_PREFLIGHT"
+}

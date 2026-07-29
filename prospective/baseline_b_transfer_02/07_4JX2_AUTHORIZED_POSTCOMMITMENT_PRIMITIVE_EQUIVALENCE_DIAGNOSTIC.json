@@ -1,0 +1,779 @@
+{
+  "artifact_type": "4JX2_AUTHORIZED_POST_COMMITMENT_PRIMITIVE_EQUIVALENCE_DIAGNOSTIC",
+  "baseline_b_decision_preserved": "INSUFFICIENT_SIGNAL",
+  "baseline_b_decision_promoted": false,
+  "commitment_binding": {
+    "candidate_c_execution": false,
+    "decision": "INSUFFICIENT_SIGNAL",
+    "file": "/workspace/scratch/8b0e706c5e34/truth_blind_4jx2/work/4JX2_BASELINE_B_TRUTH_FREE_DECISION_COMMITMENT.json",
+    "file_sha256": "7e9e93a0a3c8c77708b6820f8dc064c2fe66fa9d7dedf808cb74f14023a1ed1a",
+    "reason": "NO_PERSISTENT_FAMILY",
+    "semantic_sha256": "2aac64f387f036f887146dc0fb1b5603dba680c1a18fbedf76b87be720fd6609",
+    "truth_free_evaluation_file_sha256": "83f927a9311504184484eacb9ae1671876f38c16681cd106e3d7954b5d9d129c"
+  },
+  "conventional_experiment_sha256": {
+    "FULL": "6bf83346c147d53e54ff200e3bac01cd1f1eb0b98f3a5993d96a46c7660b3fb8",
+    "HALF_A": "bb8e65521f7f7729aa234c4a2b821675d928fa1365cdb7786a459de1c63b4952",
+    "HALF_B": "c73c1d4c7ddd9286136633e82174ab53d9c00460e84fd86131c7ed684f4e8aed"
+  },
+  "conventional_full_split_solution": {
+    "FULL": {
+      "crystal_model_count": 1,
+      "experiment_count": 11,
+      "reciprocal_orientation_matrix_angstrom_inverse": [
+        [
+          -0.013133683836914175,
+          -0.0021092545432412303,
+          0.0033280125065407347
+        ],
+        [
+          -0.0063705273689000355,
+          -0.0024630620494688893,
+          -0.0059767948787554535
+        ],
+        [
+          0.005736292312942615,
+          -0.007562849986668162,
+          0.0010073621770302463
+        ]
+      ],
+      "space_group_hall_symbol": " P 1",
+      "unit_cell_parameters_angstrom_degrees": [
+        63.760019647102816,
+        121.525267926665,
+        144.62055367496538,
+        90.08363516838709,
+        90.0764919492126,
+        90.00458014251355
+      ]
+    },
+    "HALF_A": {
+      "crystal_model_count": 1,
+      "experiment_count": 6,
+      "reciprocal_orientation_matrix_angstrom_inverse": [
+        [
+          -0.013140412213702702,
+          0.0021087175980024665,
+          -0.003325201034785052
+        ],
+        [
+          -0.006370050234993771,
+          0.002458657872584117,
+          0.005980810884526192
+        ],
+        [
+          0.005728966597910305,
+          0.00756820226750933,
+          -0.0010032655826776704
+        ]
+      ],
+      "space_group_hall_symbol": " P 1",
+      "unit_cell_parameters_angstrom_degrees": [
+        63.74878974262838,
+        121.47416829516192,
+        144.5887640569128,
+        90.10056532462295,
+        89.92014426700295,
+        89.99427700247314
+      ]
+    },
+    "HALF_B": {
+      "crystal_model_count": 1,
+      "experiment_count": 6,
+      "reciprocal_orientation_matrix_angstrom_inverse": [
+        [
+          -0.01312443113132174,
+          0.0021073080874271337,
+          -0.0033336561686124785
+        ],
+        [
+          -0.0063788615697418435,
+          0.002471047375365626,
+          0.005971922038139076
+        ],
+        [
+          0.00573926958257915,
+          0.007558486237879429,
+          -0.0010109383611047332
+        ]
+      ],
+      "space_group_hall_symbol": " P 1",
+      "unit_cell_parameters_angstrom_degrees": [
+        63.77331484683859,
+        121.55653186169222,
+        144.640867084208,
+        90.09134358595206,
+        89.9240437906462,
+        89.98257734089543
+      ]
+    }
+  },
+  "d6c1_observation_level_gate_changed": false,
+  "diagnostic_family_members": [
+    {
+      "all_partitions_primitive_equivalent": true,
+      "branch": null,
+      "family_group": "direct",
+      "family_index": 0,
+      "kind": "DIRECT",
+      "per_partition": {
+        "FULL": {
+          "maximum_transform_integer_deviation": 0.014181456222294999,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_A": {
+          "maximum_transform_integer_deviation": 0.014834974016627053,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_B": {
+          "maximum_transform_integer_deviation": 0.012387705638414721,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        }
+      },
+      "scale": 0.006
+    },
+    {
+      "all_partitions_primitive_equivalent": false,
+      "branch": 6,
+      "family_group": "completion",
+      "family_index": 0,
+      "kind": "WEAK_COMPLETION",
+      "per_partition": {
+        "FULL": {
+          "maximum_transform_integer_deviation": 0.014106514813236923,
+          "nearest_integer_basis_transform": [
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 2
+        },
+        "HALF_A": {
+          "maximum_transform_integer_deviation": 0.014763625076765702,
+          "nearest_integer_basis_transform": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 2
+        },
+        "HALF_B": {
+          "maximum_transform_integer_deviation": 0.01233037479184515,
+          "nearest_integer_basis_transform": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 2
+        }
+      },
+      "scale": 0.006
+    }
+  ],
+  "diagnostic_matching_members": [
+    {
+      "all_partitions_primitive_equivalent": true,
+      "branch": null,
+      "kind": "RECORDED_DIRECT_CANDIDATE",
+      "per_partition": {
+        "FULL": {
+          "maximum_transform_integer_deviation": 0.014181456222294999,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_A": {
+          "maximum_transform_integer_deviation": 0.014834974016627053,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_B": {
+          "maximum_transform_integer_deviation": 0.012387705638414721,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        }
+      },
+      "scale": 0.006
+    },
+    {
+      "all_partitions_primitive_equivalent": true,
+      "branch": null,
+      "family_group": "direct",
+      "family_index": 0,
+      "kind": "DIRECT",
+      "per_partition": {
+        "FULL": {
+          "maximum_transform_integer_deviation": 0.014181456222294999,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_A": {
+          "maximum_transform_integer_deviation": 0.014834974016627053,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_B": {
+          "maximum_transform_integer_deviation": 0.012387705638414721,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        }
+      },
+      "scale": 0.006
+    }
+  ],
+  "diagnostic_recorded_direct_candidates": [
+    {
+      "all_partitions_primitive_equivalent": false,
+      "branch": null,
+      "kind": "RECORDED_DIRECT_CANDIDATE",
+      "per_partition": {
+        "FULL": {
+          "maximum_transform_integer_deviation": 0.48152981662593053,
+          "nearest_integer_basis_transform": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_A": {
+          "maximum_transform_integer_deviation": 0.4844207849064712,
+          "nearest_integer_basis_transform": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              -1,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_B": {
+          "maximum_transform_integer_deviation": 0.4819382557798385,
+          "nearest_integer_basis_transform": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              -1,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 1
+        }
+      },
+      "scale": 0.012
+    },
+    {
+      "all_partitions_primitive_equivalent": false,
+      "branch": null,
+      "kind": "RECORDED_DIRECT_CANDIDATE",
+      "per_partition": {
+        "FULL": {
+          "maximum_transform_integer_deviation": 0.4884551871448685,
+          "nearest_integer_basis_transform": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_A": {
+          "maximum_transform_integer_deviation": 0.4942711007709668,
+          "nearest_integer_basis_transform": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 2
+        },
+        "HALF_B": {
+          "maximum_transform_integer_deviation": 0.4922576007606173,
+          "nearest_integer_basis_transform": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": false,
+          "rounded_integer_transform_determinant": 2
+        }
+      },
+      "scale": 0.009
+    },
+    {
+      "all_partitions_primitive_equivalent": true,
+      "branch": null,
+      "kind": "RECORDED_DIRECT_CANDIDATE",
+      "per_partition": {
+        "FULL": {
+          "maximum_transform_integer_deviation": 0.014181456222294999,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_A": {
+          "maximum_transform_integer_deviation": 0.014834974016627053,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        },
+        "HALF_B": {
+          "maximum_transform_integer_deviation": 0.012387705638414721,
+          "nearest_integer_basis_transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "primitive_lattice_equivalent": true,
+          "rounded_integer_transform_determinant": 1
+        }
+      },
+      "scale": 0.006
+    }
+  ],
+  "execution": "READ_ONLY_POST_COMMITMENT; BASELINE_B_NOT_RERUN; CANDIDATE_C_NOT_RUN",
+  "final_classification": "CONSERVATIVE_MISSED_RECOVERY",
+  "frozen_conventional_qualification": {
+    "assigned_fraction_audit": {
+      "full": {
+        "definition": "DIALS_INDEXED_REFLECTION_FLAG_COUNT_DIVIDED_BY_INDEXED_REFLECTION_TABLE_ROW_COUNT",
+        "indexed_flag_count": 138431,
+        "indexed_reflection_table_sha256": "b64d70f817d98c25fe98c5ee970b8affe2fc059f6f60dcd48d4634f28dc4695a",
+        "total_row_count": 188237
+      },
+      "half_a": {
+        "definition": "DIALS_INDEXED_REFLECTION_FLAG_COUNT_DIVIDED_BY_INDEXED_REFLECTION_TABLE_ROW_COUNT",
+        "indexed_flag_count": 69475,
+        "indexed_reflection_table_sha256": "643e8532d3a9c00f6f00a2b4e4772e2f092a249f181dc056e59195acadbcbe43",
+        "total_row_count": 94665
+      },
+      "half_b": {
+        "definition": "DIALS_INDEXED_REFLECTION_FLAG_COUNT_DIVIDED_BY_INDEXED_REFLECTION_TABLE_ROW_COUNT",
+        "indexed_flag_count": 69131,
+        "indexed_reflection_table_sha256": "bc44cb89313b8719556ba673310fd17eeaaa13656d78065741bc590d6cf174a6",
+        "total_row_count": 93732
+      }
+    },
+    "gate_file_sha256": "8557ad75e9904fd6cc3af6c4f002dc454de539e649d82c75e8e5fa91e9e85610",
+    "gate_semantic_sha256": "0e0b64684a5dc2d8f8abefe15b5e3b40f40837a3c139e1d193c00b0bf4584aeb",
+    "maximum_pairwise_invariant_orientation_difference_degrees": 0.1220666886820302,
+    "maximum_pairwise_relative_metric_difference": 0.0008364571673374129,
+    "minimum_assigned_fraction": 0.7339037659113716,
+    "pairwise_comparisons": {
+      "full__half_a": {
+        "basis_search_bound": 1,
+        "comparison_status": "BASIS_INVARIANT_COMPARISON_AVAILABLE",
+        "metric_admissible_operator_count": 4,
+        "metric_threshold": 0.05,
+        "operator_count": 3480,
+        "selected": {
+          "basis_operator": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "operator_determinant": 1,
+          "orientation_difference_degrees": 0.052300347321506895,
+          "polar_stretch_frobenius": 0.0005498176723944478,
+          "relative_metric_difference": 0.0004198089387576235
+        }
+      },
+      "full__half_b": {
+        "basis_search_bound": 1,
+        "comparison_status": "BASIS_INVARIANT_COMPARISON_AVAILABLE",
+        "metric_admissible_operator_count": 4,
+        "metric_threshold": 0.05,
+        "operator_count": 3480,
+        "selected": {
+          "basis_operator": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "operator_determinant": 1,
+          "orientation_difference_degrees": 0.07261650452873092,
+          "polar_stretch_frobenius": 0.0004043093728916351,
+          "relative_metric_difference": 0.0004510571900950006
+        }
+      },
+      "half_a__half_b": {
+        "basis_search_bound": 1,
+        "comparison_status": "BASIS_INVARIANT_COMPARISON_AVAILABLE",
+        "metric_admissible_operator_count": 4,
+        "metric_threshold": 0.05,
+        "operator_count": 3480,
+        "selected": {
+          "basis_operator": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "operator_determinant": 1,
+          "orientation_difference_degrees": 0.1220666886820302,
+          "polar_stretch_frobenius": 0.000879238779091225,
+          "relative_metric_difference": 0.0008364571673374129
+        }
+      }
+    },
+    "principal_outcome": "CONVENTIONAL_FULL_AND_SPLIT_INDEXABILITY_STABLE",
+    "thresholds": {
+      "maximum_orientation_difference_degrees": 2.0,
+      "maximum_relative_metric_difference": 0.05,
+      "minimum_assigned_fraction": 0.5
+    }
+  },
+  "frozen_equivalence": {
+    "delegate": "/workspace/scratch/8b0e706c5e34/baseline_source/restored/candidate/scripts/evaluate_d5_successor.py",
+    "delegate_sha256": "0f142754f11e0703642a304f74452dde9233ffb4073709afe206b8d07ddec2f5",
+    "maximum_basis_integer_deviation": 0.03,
+    "required_absolute_determinant": 1,
+    "wrapper": "/workspace/scratch/8b0e706c5e34/baseline_source/rebuild/evaluate.py",
+    "wrapper_sha256": "2fe1c017d287ee7cb24abb8c8c7cc100f46c72c24f5b38b6ad0654b456a06002"
+  },
+  "public_reproducible_observation_level_reduction_exists": false,
+  "semantic_sha256": "054708a32a261b0cc81f36ca7a13d3fcd7b30ab9a86158ba95d86012eda919eb"
+}
