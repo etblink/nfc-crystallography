@@ -28,6 +28,21 @@
       "confirmation_eligible": false
     },
     {
+      "identifier": "8VTD",
+      "role": "PROSPECTIVE_CORRECT_RECOVERY_THEN_OPEN_DEVELOPMENT",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "9JZO",
+      "role": "PAIRED_PROSPECTIVE_CONSERVATIVE_MISS_THEN_OPEN_DEVELOPMENT",
+      "confirmation_eligible": false
+    },
+    {
+      "identifier": "4JX2",
+      "role": "BASELINE_B_ONLY_PROSPECTIVE_CONSERVATIVE_MISS_THEN_OPEN_DEVELOPMENT",
+      "confirmation_eligible": false
+    },
+    {
       "identifier": "5V0G",
       "role": "TRUTH_EXPOSED_DEVELOPMENT_POSITIVE_CONTROL",
       "confirmation_eligible": false
