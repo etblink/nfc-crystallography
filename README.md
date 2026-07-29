@@ -23,7 +23,7 @@ NFC, or evidence that NFC is a Theory of Everything.
 | D4.5 reciprocal consolidation | Causally useful on current controls; scan-local and increment-sign-aware. |
 | Baseline B lattice method | Default comparator; real-data recovery capable with explicit abstention. |
 | Candidate C phase substitution | Compatible continuous alternative; no prospective incremental value established. |
-| Prospective record | 8VTD correct recovery; 9JZO conservative ambiguous decision with the physical family present. |
+| Prospective record | 8VTD correct recovery; 9JZO and 4JX2 conservative misses with physical primitive families present but not decision-qualified. |
 | D6c1–D7 transfer | Not established. |
 
 The complete evidence table, including failures and exclusions, is generated
@@ -144,7 +144,9 @@ paper/                       methods-paper draft
 - Development results remain development results even when they recover the
   deposited lattice.
 - 8VTD is the current correct prospective recovery.
-- 9JZO is a prospective conservative miss, not a wrong-lattice result.
+- 9JZO is a prospective conservative miss with the physical family latent.
+- 4JX2 is a prospective conservative miss with the physical family present at
+  only one tested scale; it is not a recovery or a wrong-lattice result.
 - 6CKT and 6TPI were pre-execution gate exclusions, not method failures.
 - Candidate C has no demonstrated incremental benefit.
 - There has been no independent external reproduction yet.
