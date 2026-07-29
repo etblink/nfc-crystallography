@@ -2,13 +2,23 @@
 
 **Evan Thomas Kotler**
 
-Independent researcher, Las Vegas, Nevada, USA
+Independent researcher (solo, AI-assisted), Las Vegas, Nevada, USA
+
+Correspondence: evantkotler@gmail.com
+
+ORCID: <https://orcid.org/0009-0004-5840-4443>
+
+**Synopsis:** A raw-derived crystallographic method consolidates repeat
+diffraction detections, generates multiscale primitive-lattice candidates, and
+explicitly abstains when evidence is insufficient or ambiguous. Public
+real-data tests establish genuine recovery capability together with substantial
+sensitivity limits.
 
 ## Abstract
 
 Indexing macromolecular rotation data ordinarily combines detector modeling,
-spot finding, reciprocal-space mapping, lattice search, and refinement. We
-evaluate an exploratory alternative that derives three-dimensional reciprocal
+spot finding, reciprocal-space mapping, lattice search, and refinement. An
+exploratory alternative is evaluated that derives three-dimensional reciprocal
 observations from raw images without using a conventional unit cell,
 orientation matrix, symmetry assignment, or processed reflection file. The
 pipeline has three stages. D4 detects frame-local diffraction signal using a
@@ -47,11 +57,13 @@ spot finding; abstention; reproducible research
 Indexing a rotation diffraction experiment requires a consistent explanation
 of observed spot positions by a reciprocal lattice and an orientation. Mature
 programs such as XDS and DIALS combine detector geometry, spot finding, lattice
-search, indexing, and refinement in robust processing systems [1,2]. Established
-indexing approaches include Fourier analysis of reciprocal-space difference
-vectors [3], robust real-space grid searches [4], and extensions for multiple
-lattices [5]. Reduced-cell and basis-equivalence machinery is essential when
-comparing solutions represented by different valid lattice bases [6].
+search, indexing, and refinement in robust processing systems (Kabsch, 2010;
+Winter et al., 2018). Established indexing approaches include Fourier analysis
+of reciprocal-space difference vectors (Steller et al., 1997), robust
+real-space grid searches (Sauter et al., 2004), and extensions for multiple
+lattices (Gildea et al., 2014). Reduced-cell and basis-equivalence machinery is
+essential when comparing solutions represented by different valid lattice
+bases (Grosse-Kunstleve et al., 2004).
 
 The present work began with a narrower question: can a raw-image
 representation developed independently of a conventional indexing solution
@@ -66,9 +78,11 @@ Initial work on 9Z6F used a detector-specific implementation. A portability
 layer was subsequently added for native PILATUS 1.2 MiniCBF frames, retaining
 native detector dimensions and geometry and prohibiting resampling, cropping,
 or pixel-value scaling. PILATUS detectors and the CBF/imgCIF family are
-well-established crystallographic technologies [7,8]. Public raw datasets were
-obtained from the Integrated Resource for Reproducibility in Macromolecular
-Crystallography (IRRMC) and associated ProteinDiffraction repositories [9].
+well-established crystallographic technologies (Brönnimann et al., 2006;
+Bernstein & Hammersley, 2006). Public raw datasets were obtained from the
+Integrated Resource for Reproducibility in Macromolecular Crystallography
+(IRRMC) and associated ProteinDiffraction repositories (Grabowski et al.,
+2016).
 
 Open evaluation on 9JQ9 separated a positive upstream result from a negative
 downstream result. Frame-local D4 detections agreed strongly with conventional
@@ -313,7 +327,8 @@ not change an abstention into a recovery.
 ### 2.9 Implementation and reproducibility
 
 The public implementation is Python 3.10 or later with NumPy and SciPy; the
-raw-frame path additionally requires a lawful DIALS/dxtbx runtime [2]. The
+raw-frame path additionally requires a lawful DIALS/dxtbx runtime (Winter et
+al., 2018). The
 released baseline archive has SHA-256
 `ba18310a04a45c13f1fdf100599c77f2da9fa8ba2f43ec9e942719871b6edf48`,
 and every bundled source used
@@ -594,45 +609,58 @@ are based on public inputs, executable code, preserved hashes, and recorded
 outcomes rather than on the authority of the conversations that produced
 them.
 
+## Funding information
+
+This work was self-funded by the author and received no external funding.
+
+## Conflict of interest
+
+The author declares no competing interests.
+
 ## References
 
-1. Kabsch, W. (2010). XDS. *Acta Crystallographica Section D*, **66**,
-   125–132. <https://doi.org/10.1107/S0907444909047337>
-2. Winter, G., Waterman, D. G., Parkhurst, J. M., Brewster, A. S.,
-   Gildea, R. J., Gerstel, M., Fuentes-Montero, L., Vollmar, M., Michels-Clark,
-   T., Young, I. D., Sauter, N. K. & Evans, G. (2018). DIALS: implementation
-   and evaluation of a new integration package. *Acta Crystallographica
-   Section D*, **74**, 85–97.
-   <https://doi.org/10.1107/S2059798317017235>
-3. Steller, I., Bolotovsky, R. & Rossmann, M. G. (1997). An algorithm for
-   automatic indexing of oscillation images using Fourier analysis.
-   *Journal of Applied Crystallography*, **30**, 1036–1040.
-   <https://doi.org/10.1107/S0021889897008777>
-4. Sauter, N. K., Grosse-Kunstleve, R. W. & Adams, P. D. (2004). Robust
-   indexing for automatic data collection. *Journal of Applied
-   Crystallography*, **37**, 399–409.
-   <https://doi.org/10.1107/S0021889804005874>
-5. Gildea, R. J., Waterman, D. G., Parkhurst, J. M., Axford, D., Sutton, G.,
-   Stuart, D. I., Sauter, N. K., Evans, G. & Winter, G. (2014). New methods
-   for indexing multi-lattice diffraction data. *Acta Crystallographica
-   Section D*, **70**, 2652–2666.
-   <https://doi.org/10.1107/S1399004714017039>
-6. Grosse-Kunstleve, R. W., Sauter, N. K. & Adams, P. D. (2004). Numerically
-   stable algorithms for the computation of reduced unit cells. *Acta
-   Crystallographica Section A*, **60**, 1–6.
-   <https://doi.org/10.1107/S010876730302186X>
-7. Brönnimann, C., Eikenberry, E. F., Henrich, B., Horisberger, R., Hülsen,
-   G., Pohl, E., Schmitt, B., Schulze-Briese, C., Suzuki, M., Tomizaki, T.,
-   Toyokawa, H. & Wagner, A. (2006). The PILATUS 1M detector. *Journal of
-   Synchrotron Radiation*, **13**, 120–130.
-   <https://doi.org/10.1107/S0909049505038665>
-8. Bernstein, H. J. & Hammersley, A. P. (2006). Specification of the
-   crystallographic binary file (CBF/imgCIF). In *International Tables for
-   Crystallography, Volume G: Definition and exchange of crystallographic
-   data*, Chapter 2.3, pp. 37–43.
-   <https://doi.org/10.1107/97809553602060000729>
-9. Grabowski, M., Cymborowski, M., Porebski, P. J., Osinski, T., Shabalin,
-   I. G., Cooper, D. R., Minor, W. & Joachimiak, A. (2016). The Integrated
-   Resource for Reproducibility in Macromolecular Crystallography: experiences
-   of the first four years. *Acta Crystallographica Section D*, **72**,
-   1181–1193. <https://doi.org/10.1107/S2059798316014716>
+Bernstein, H. J. & Hammersley, A. P. (2006). Specification of the
+crystallographic binary file (CBF/imgCIF). In *International Tables for
+Crystallography, Volume G: Definition and exchange of crystallographic data*,
+Chapter 2.3, pp. 37–43.
+<https://doi.org/10.1107/97809553602060000729>
+
+Brönnimann, C., Eikenberry, E. F., Henrich, B., Horisberger, R., Hülsen, G.,
+Pohl, E., Schmitt, B., Schulze-Briese, C., Suzuki, M., Tomizaki, T.,
+Toyokawa, H. & Wagner, A. (2006). The PILATUS 1M detector. *Journal of
+Synchrotron Radiation*, **13**, 120–130.
+<https://doi.org/10.1107/S0909049505038665>
+
+Gildea, R. J., Waterman, D. G., Parkhurst, J. M., Axford, D., Sutton, G.,
+Stuart, D. I., Sauter, N. K., Evans, G. & Winter, G. (2014). New methods for
+indexing multi-lattice diffraction data. *Acta Crystallographica Section D*,
+**70**, 2652–2666. <https://doi.org/10.1107/S1399004714017039>
+
+Grabowski, M., Cymborowski, M., Porebski, P. J., Osinski, T., Shabalin, I. G.,
+Cooper, D. R., Minor, W. & Joachimiak, A. (2016). The Integrated Resource for
+Reproducibility in Macromolecular Crystallography: experiences of the first
+four years. *Acta Crystallographica Section D*, **72**, 1181–1193.
+<https://doi.org/10.1107/S2059798316014716>
+
+Grosse-Kunstleve, R. W., Sauter, N. K. & Adams, P. D. (2004). Numerically
+stable algorithms for the computation of reduced unit cells. *Acta
+Crystallographica Section A*, **60**, 1–6.
+<https://doi.org/10.1107/S010876730302186X>
+
+Kabsch, W. (2010). XDS. *Acta Crystallographica Section D*, **66**, 125–132.
+<https://doi.org/10.1107/S0907444909047337>
+
+Sauter, N. K., Grosse-Kunstleve, R. W. & Adams, P. D. (2004). Robust indexing
+for automatic data collection. *Journal of Applied Crystallography*, **37**,
+399–409. <https://doi.org/10.1107/S0021889804005874>
+
+Steller, I., Bolotovsky, R. & Rossmann, M. G. (1997). An algorithm for
+automatic indexing of oscillation images using Fourier analysis. *Journal of
+Applied Crystallography*, **30**, 1036–1040.
+<https://doi.org/10.1107/S0021889897008777>
+
+Winter, G., Waterman, D. G., Parkhurst, J. M., Brewster, A. S., Gildea, R. J.,
+Gerstel, M., Fuentes-Montero, L., Vollmar, M., Michels-Clark, T., Young,
+I. D., Sauter, N. K. & Evans, G. (2018). DIALS: implementation and evaluation
+of a new integration package. *Acta Crystallographica Section D*, **74**,
+85–97. <https://doi.org/10.1107/S2059798317017235>

@@ -5,6 +5,8 @@ type: software
 authors:
   - family-names: Kotler
     given-names: Evan Thomas
+    email: evantkotler@gmail.com
+    orcid: "https://orcid.org/0009-0004-5840-4443"
 repository-code: "https://github.com/etblink/nfc-crystallography"
 identifiers:
   - type: doi

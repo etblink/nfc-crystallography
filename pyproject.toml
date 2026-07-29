@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
-  { name = "Evan Thomas Kotler" },
+  { name = "Evan Thomas Kotler", email = "evantkotler@gmail.com" },
 ]
 dependencies = [
   "numpy>=1.24",

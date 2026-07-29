@@ -5,15 +5,20 @@ invented in the scientific manuscript.
 
 ## Required before submission
 
-- [ ] Select the target journal and apply its article template, word limit,
-  reference style, and data-policy requirements.
-- [ ] Confirm the corresponding-author email and whether an ORCID should be
-  listed.
-- [ ] Confirm the final affiliation wording.
-- [ ] Add the author's funding statement.
-- [ ] Add the author's competing-interests declaration.
-- [ ] Confirm whether the target journal requires a separate data-availability,
-  code-availability, ethics, or AI-use form.
+- [x] Select *Journal of Applied Crystallography*, Research Paper, as the
+  target. Record its scope, category choice, length guidance, reference style,
+  data policy, and publication route in `paper/JOURNAL_PLAN.md`.
+- [ ] Convert the Markdown manuscript to the current IUCr Word or LaTeX
+  template.
+- [x] Add the corresponding-author email and ORCID.
+- [x] Confirm the affiliation as “Independent researcher (solo,
+  AI-assisted), Las Vegas, Nevada, USA”.
+- [x] Add the author's self-funding statement.
+- [x] Add the author's competing-interests declaration.
+- [x] Include explicit data-and-code availability and human–AI-use
+  disclosures. Recheck the live submission form for any corresponding
+  metadata fields when submitting.
+- [x] Draft the journal covering letter.
 - [ ] Confirm that the Zenodo `v0.1.1` files are published under concept DOI
   `10.5281/zenodo.21639283`; until then, cite the exact GitHub release as the
   `v0.1.1` source of record.
@@ -21,38 +26,44 @@ invented in the scientific manuscript.
   completes.
 - [ ] Decide whether the detailed evidence table remains in the main text or
   moves to supplementary material.
-- [ ] Add figures only when they communicate a relationship not already clear
-  from the tables. At minimum, consider a pipeline schematic and the D4.5
+- [ ] Add the graphical abstract or thumbnail requested by the journal. Add
+  other figures only when they communicate a relationship not already clear
+  from the tables; at minimum, consider a pipeline schematic and the D4.5
   causal-ablation comparison.
 - [ ] Ask one crystallographer or diffraction-software developer to review the
   method definitions and claim boundary.
+- [ ] Confirm immediately before submission that the manuscript is original
+  and is not under consideration elsewhere.
 
 ## Scientific checks
 
-- [ ] Keep baseline B unchanged and controlling.
-- [ ] Keep candidate C labeled as an experimental compatible alternative with
+- [x] Keep baseline B unchanged and controlling.
+- [x] Keep candidate C labeled as an experimental compatible alternative with
   no demonstrated incremental value.
-- [ ] Preserve 8VTD as the single correct prospective recovery.
-- [ ] Preserve 9JZO and 4JX2 as conservative missed recoveries; do not count
+- [x] Preserve 8VTD as the single correct prospective recovery.
+- [x] Preserve 9JZO and 4JX2 as conservative missed recoveries; do not count
   latent or single-scale physical families as recovered decisions.
-- [ ] Preserve 4G2A, 6CKT, and 6TPI as pre-execution exclusions with no NFC
+- [x] Preserve 4G2A, 6CKT, and 6TPI as pre-execution exclusions with no NFC
   result.
-- [ ] State that three prospective corpora do not support a general success-rate
+- [x] State that three prospective corpora do not support a general success-rate
   estimate.
-- [ ] State that independent external reproduction and D6c1-D7 transfer are
+- [x] State that independent external reproduction and D6c1-D7 transfer are
   not established.
-- [ ] Keep the crystallographic claim independent of NFC cosmology or
+- [x] Keep the crystallographic claim independent of NFC cosmology or
   Theory-of-Everything claims.
 
 ## Release validation
 
-- [ ] Run `ruff check .`.
-- [ ] Run `pytest`.
-- [ ] Run `nfc-cryst verify-methods`.
-- [ ] Run the compact 8VTD replay and confirm zero nonfloating mismatches.
-- [ ] Build wheel and source distribution.
+- [x] Run `ruff check .`.
+- [x] Run `pytest` (14/14 passed).
+- [x] Run `nfc-cryst verify-methods` (21/21 source bindings passed).
+- [x] Run the compact 8VTD replay and preserve
+  `LATTICE_RECOVERED / ONE_PERSISTENT_FAMILY_SURVIVES` with decision digest
+  `18d8664318f9d27964a4abe179841acf34a2f4bb50e6b836e034ffb154afe249`.
+- [x] Build wheel and source distribution.
 - [ ] Install the wheel in a clean Python 3.10 environment and a clean Python
   3.12 environment.
-- [ ] Verify the raw-builder imports from the installed wheel.
+- [x] Verify the raw-builder imports and all 21 frozen method sources from an
+  isolated installed wheel under Python 3.12.
 - [ ] Record the final manuscript commit and Git tree in the submission
   materials.
