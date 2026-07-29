@@ -101,7 +101,13 @@ decisions: `LATTICE_RECOVERED`, `AMBIGUOUS_LATTICE`, or
 `INSUFFICIENT_SIGNAL`. The contribution is not presented as a production
 replacement for conventional indexing. It is a raw-derived candidate and
 evidence framework with one correct prospective transfer, two prospective
-misses, and documented limits.
+misses, and documented limits. The fixed computational flow is summarized in
+Fig. 1.
+
+![Baseline B converts native rotation images into frame-local D4 detections,
+repeat-certified D4.5 reciprocal centroids, and multiscale D5 candidate
+families. Layered split, held-out, finite-index, and complexity evidence then
+authorizes recovery or explicit abstention.](figures/figure_1_pipeline.png){width=88mm}
 
 ## 2. Materials and methods
 
@@ -195,12 +201,12 @@ sample orientation \(\mathbf R_\phi\) at the frame midpoint,
 \mathbf q=\mathbf R_\phi^{\mathsf T}(\mathbf s_1-\mathbf s_0).
 \]
 
-Reciprocal coordinates are expressed in cycles Å\(^{-1}\), without a
-\(2\pi\) factor. The mapping uses the scan-axis direction and sign reported by
+Reciprocal coordinates are expressed in cycles Å⁻¹, without a
+2π factor. The mapping uses the scan-axis direction and sign reported by
 the image model. A public SMV projection qualification on 501 frames compared
 56,491 coordinates with a reference implementation, with no array or
 source-hash mismatch and a maximum component difference of
-\(2.29\times10^{-15}\) Å\(^{-1}\).
+\(2.29\times10^{-15}\) Å⁻¹.
 
 ### 2.4 D4.5 repeat-certified consolidation
 
@@ -230,11 +236,11 @@ symmetry, processed reflection file, or truth-derived filter.
 The D5 candidate kernel is inherited unchanged from the frozen exploratory
 implementation. It balances at most 1,000 reciprocal objects per scan,
 collects 15 nearest-neighbor difference vectors per object up to
-0.12 Å\(^{-1}\), bins the differences at a width of 0.003 Å\(^{-1}\), retains
+0.12 Å⁻¹, bins the differences at a width of 0.003 Å⁻¹, retains
 local modes at 10% of the maximum bin count, deduplicates modes within
-0.004 Å\(^{-1}\), and forms independent triples subject to minimum pair-sine
+0.004 Å⁻¹, and forms independent triples subject to minimum pair-sine
 0.1 and minimum normalized determinant 0.05. Integer refinement uses a fixed
-descending residual schedule from 0.014 to 0.003 Å\(^{-1}\).
+descending residual schedule from 0.014 to 0.003 Å⁻¹.
 
 Baseline B repeats this search with lower difference-vector floors
 
@@ -265,7 +271,7 @@ r(\mathbf q;\mathbf B,\mathbf o)
 \]
 
 Baseline B measures the fraction of observations with
-\(r\leq0.003\) Å\(^{-1}\). The zero origin is compared with the 63 nonzero
+\(r\leq0.003\) Å⁻¹. The zero origin is compared with the 63 nonzero
 origins in
 \(\{0,\tfrac14,\tfrac12,\tfrac34\}^3\). Every null uses the identical basis
 and reciprocal-grid density. The zero-origin support must exceed the null
@@ -291,7 +297,7 @@ finite-index ambiguity; otherwise recovery. The only allowed final labels are
 ### 2.7 Comparator C
 
 Candidate C changes only the phase statistic to a continuous Cauchy affinity
-with fixed scale 0.003 Å\(^{-1}\). It leaves D4.5, candidate generation,
+with fixed scale 0.003 Å⁻¹. It leaves D4.5, candidate generation,
 floors, persistence, split rules, finite-index alternatives, complexity
 checks, thresholds, and abstention logic unchanged. C reproduced all 43
 development-set classifications and all 17 selected recovery families of B.
@@ -399,8 +405,8 @@ lowered floors from accepting a sparse parent explanation.
 
 The method lineage recovered primitive lattices on 9Z6F, 6GN2, both 6GN3
 sweeps, and 6MFU after 6MFU entered development. The 6MFU diagnosis was
-specific: a required primitive-completion vector of 0.0111337 Å\(^{-1}\) lay
-below the original 0.012 Å\(^{-1}\) floor, and the physical completion lay in
+specific: a required primitive-completion vector of 0.0111337 Å⁻¹ lay
+below the original 0.012 Å⁻¹ floor, and the physical completion lay in
 the direction \(\mathbf B\mathbf H^{-1}\) that a coarsening-only audit did not
 search. The original prospective 6MFU abstention remains a miss.
 
@@ -425,7 +431,7 @@ determines whether a run counts as a recovery.
 | --- | --- | --- | --- |
 | 8VTD | Baseline B | `LATTICE_RECOVERED` | Correct physical primitive lattice |
 | 9JZO | Baseline B and candidate C | Both `AMBIGUOUS_LATTICE` | Exact comparator tie; common latent family primitive-equivalent |
-| 4JX2 | Unchanged public `v0.1.1` baseline B | `INSUFFICIENT_SIGNAL` / `NO_PERSISTENT_FAMILY` | 0.006 Å\(^{-1}\) direct family primitive-equivalent; present at one scale only |
+| 4JX2 | Unchanged public `v0.1.1` baseline B | `INSUFFICIENT_SIGNAL` / `NO_PERSISTENT_FAMILY` | 0.006 Å⁻¹ direct family primitive-equivalent; present at one scale only |
 
 The 8VTD decision is the strongest positive transfer result. Its method and
 input identities were fixed before conventional truth was consulted, and the
@@ -440,11 +446,11 @@ The 4JX2 archive contained 542 native CBF frames; 540 entered the fixed feeds.
 D4.5 produced 31,668 full-feed objects, 16,024 half-A objects, and 15,647
 half-B objects. Baseline B returned `INSUFFICIENT_SIGNAL` with reason
 `NO_PERSISTENT_FAMILY`. Per-scale decisions were `INSUFFICIENT_SIGNAL` at
-0.012 Å\(^{-1}\), `AMBIGUOUS_LATTICE` at 0.009 Å\(^{-1}\), and direct
-recovery at 0.006 Å\(^{-1}\). The truth-free commitment was bound before
+0.012 Å⁻¹, `AMBIGUOUS_LATTICE` at 0.009 Å⁻¹, and direct
+recovery at 0.006 Å⁻¹. The truth-free commitment was bound before
 reveal (semantic SHA-256
 `2aac64f387f036f887146dc0fb1b5603dba680c1a18fbedf76b87be720fd6609`).
-Post-commitment scoring found the 0.006 Å\(^{-1}\) direct bases
+Post-commitment scoring found the 0.006 Å⁻¹ direct bases
 primitive-equivalent to the conventional full and both split solutions, with
 maximum transform deviations 0.01418, 0.01483, and 0.01239. The family was
 not present at two scales, so the committed abstention is preserved.

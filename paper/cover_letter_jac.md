@@ -1,10 +1,12 @@
-# Draft cover letter
+# Cover letter
 
-Editors
+29 July 2026
+
+Dr T. J. Lane, Co-editor
 
 *Journal of Applied Crystallography*
 
-Dear Editors,
+Dear Dr Lane,
 
 Please consider the manuscript, “Raw-only repeat-certified reciprocal-spot
 consolidation and multiscale primitive-lattice recovery with explicit
@@ -40,6 +42,9 @@ organization, reproducibility packaging, and drafting. The author directed and
 verified the work, controlled the scientific claim boundaries, and accepts
 full responsibility for the manuscript.
 
+I confirm that this manuscript is original, has not been published previously,
+and is not under consideration for publication elsewhere.
+
 Sincerely,
 
 Evan Thomas Kotler
@@ -51,10 +56,3 @@ Las Vegas, Nevada, USA
 evantkotler@gmail.com
 
 ORCID: <https://orcid.org/0009-0004-5840-4443>
-
-## Pre-submission checks (remove from the submitted letter)
-
-- Confirm that the manuscript is original and not under consideration
-  elsewhere.
-- Confirm that all files cited in the data-and-code availability statement are
-  publicly accessible.

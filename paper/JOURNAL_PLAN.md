@@ -60,13 +60,32 @@ publication route.
 - The exact `v0.1.1` release files are archived under Zenodo version DOI
   `10.5281/zenodo.21654414`, linked to concept DOI
   `10.5281/zenodo.21639283`.
+- A single-column, double-spaced Word preprint has been produced from the
+  published IUCr requirements.
+- A 600-dpi pipeline figure is embedded in the manuscript and supplied
+  separately.
+- A separate 600-dpi graphical abstract is supplied.
+- Both evidence tables remain in the article because they are central to the
+  interpretation; no redundant supporting-information file is planned.
 
-## Still required before submission
+## Editorial routing
 
-1. Convert the Markdown draft to the current IUCr Word or LaTeX template.
-2. Finalize the covering letter after confirming originality and exclusive
-   submission.
-3. Add a graphical abstract or thumbnail image.
-4. Decide which evidence table remains in the article and what moves to
-   supporting information.
-5. Select the most closely matched editor in the live submission system.
+**Recommended Co-editor:** T. J. Lane
+
+The current editorial-board description lists statistical crystallography,
+biological crystallography, and computational methods among T. J. Lane's
+areas, making this the closest match to the manuscript's lattice-inference,
+macromolecular-diffraction, and method-validation focus. If the submission
+system does not offer that selection, allow the journal to route the paper.
+
+## Remaining author-only confirmations
+
+1. Confirm immediately before upload that the manuscript is original and is
+   not under consideration elsewhere.
+2. Confirm that the three suggested referees have no disqualifying personal,
+   professional, or financial conflict with the author.
+3. Review the journal-generated submission PDF, especially equations, figure
+   placement, and both tables.
+4. Record the merged manuscript commit and Git tree in the submission log.
+5. Add the Software Heritage snapshot identifier later if request `2402658`
+   completes; do not delay submission solely for this redundant archive.

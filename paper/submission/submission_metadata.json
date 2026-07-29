@@ -1,0 +1,50 @@
+{
+  "journal": "Journal of Applied Crystallography",
+  "article_type": "Research Paper",
+  "recommended_coeditor": "T. J. Lane",
+  "title": "Raw-only repeat-certified reciprocal-spot consolidation and multiscale primitive-lattice recovery with explicit abstention",
+  "author": {
+    "given_names": "Evan Thomas",
+    "family_name": "Kotler",
+    "affiliation": "Independent researcher (solo, AI-assisted), Las Vegas, Nevada, USA",
+    "email": "evantkotler@gmail.com",
+    "orcid": "0009-0004-5840-4443",
+    "corresponding": true
+  },
+  "keywords": [
+    "diffraction indexing",
+    "reciprocal lattice",
+    "rotation data",
+    "spot finding",
+    "abstention",
+    "reproducible research"
+  ],
+  "funding": "Self-funded; no external funding",
+  "competing_interests": "None declared",
+  "data_and_code": {
+    "repository": "https://github.com/etblink/nfc-crystallography",
+    "release": "https://github.com/etblink/nfc-crystallography/releases/tag/v0.1.1",
+    "zenodo_concept_doi": "10.5281/zenodo.21639283",
+    "zenodo_version_doi": "10.5281/zenodo.21654414"
+  },
+  "software_heritage_save_request": {
+    "request_id": 2402658,
+    "status_at_package_preparation": "pending_or_not_yet_recorded",
+    "submission_blocker": false
+  },
+  "submission_files": {
+    "manuscript": "JAC_submission_manuscript.docx",
+    "figure_1": "figure_1_pipeline.png",
+    "graphical_abstract": "graphical_abstract.png",
+    "cover_letter": "JAC_cover_letter.docx",
+    "supporting_information": null
+  },
+  "claim_boundary": {
+    "prospective_correct_recoveries": 1,
+    "prospective_conservative_misses": 2,
+    "prospective_confident_wrong_recoveries": 0,
+    "independent_external_reproduction_established": false,
+    "d6c1_through_d7_transfer_established": false,
+    "cosmological_claim": false
+  }
+}

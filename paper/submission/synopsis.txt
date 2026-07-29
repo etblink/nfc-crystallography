@@ -1,0 +1,1 @@
+A raw-derived crystallographic method consolidates repeat diffraction detections, generates multiscale primitive-lattice candidates, and explicitly abstains when evidence is insufficient or ambiguous. Public real-data tests establish genuine recovery capability together with substantial sensitivity limits.

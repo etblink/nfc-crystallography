@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Graphical abstract for the raw-only lattice recovery and abstention method</title>
+  <desc id="desc">Raw diffraction frames pass through D4 detection, D4.5 reciprocal centroid consolidation, and multiscale D5 evidence tests to either recover a primitive lattice or abstain. The prospective record is one correct recovery, two conservative misses, and no confident wrong recovery.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,7 L0,14 z" fill="#213547"/>
+    </marker>
+    <style>
+      .title { font:700 66px Arial, Helvetica, sans-serif; fill:#17232e; }
+      .head { font:700 48px Arial, Helvetica, sans-serif; fill:#17232e; }
+      .body { font:400 34px Arial, Helvetica, sans-serif; fill:#17232e; }
+      .small { font:400 29px Arial, Helvetica, sans-serif; fill:#17232e; }
+      .card { stroke:#213547; stroke-width:5; rx:28; }
+      .arrow { stroke:#213547; stroke-width:9; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="2400" height="1350" fill="#ffffff"/>
+  <text class="title" x="1200" y="105" text-anchor="middle">Raw-derived lattice recovery with explicit abstention</text>
+  <text class="body" x="1200" y="160" text-anchor="middle">Cell-free reciprocal observations • fixed multiscale evidence • public prospective tests</text>
+
+  <rect class="card" x="90" y="265" width="430" height="380" fill="#e8f2f8"/>
+  <text class="head" x="305" y="345" text-anchor="middle">Raw frames</text>
+  <rect x="175" y="405" width="260" height="155" rx="14" fill="#ffffff" stroke="#0072b2" stroke-width="6"/>
+  <g fill="#17232e">
+    <circle cx="223" cy="456" r="11"/><circle cx="282" cy="503" r="14"/>
+    <circle cx="355" cy="450" r="9"/><circle cx="392" cy="520" r="12"/>
+    <circle cx="238" cy="532" r="8"/>
+  </g>
+  <text class="small" x="305" y="605" text-anchor="middle">native detector geometry</text>
+
+  <path class="arrow" d="M545 455 H655"/>
+
+  <rect class="card" x="680" y="265" width="430" height="380" fill="#fff2d6"/>
+  <text class="head" x="895" y="345" text-anchor="middle">D4 → D4.5</text>
+  <text class="body" x="895" y="415" text-anchor="middle">Detect frame-local spots</text>
+  <text class="body" x="895" y="463" text-anchor="middle">and consolidate repeats</text>
+  <g stroke="#009e73" stroke-width="7" fill="none">
+    <path d="M775 535 L845 506 L920 539 L1002 496"/>
+  </g>
+  <g fill="#009e73" stroke="#17232e" stroke-width="3">
+    <circle cx="775" cy="535" r="14"/><circle cx="845" cy="506" r="14"/>
+    <circle cx="920" cy="539" r="14"/><circle cx="1002" cy="496" r="14"/>
+  </g>
+  <text class="small" x="895" y="605" text-anchor="middle">repeat-certified 3D centroids</text>
+
+  <path class="arrow" d="M1135 455 H1245"/>
+
+  <rect class="card" x="1270" y="265" width="500" height="380" fill="#f3e7f0"/>
+  <text class="head" x="1520" y="345" text-anchor="middle">D5 evidence</text>
+  <text class="body" x="1520" y="414" text-anchor="middle">Multiscale candidates</text>
+  <text class="small" x="1520" y="472" text-anchor="middle">split reproducibility</text>
+  <text class="small" x="1520" y="515" text-anchor="middle">held-out origin specificity</text>
+  <text class="small" x="1520" y="558" text-anchor="middle">finite-index + complexity audits</text>
+  <text class="small" x="1520" y="605" text-anchor="middle">no forced lattice output</text>
+
+  <path class="arrow" d="M1795 455 H1905"/>
+
+  <rect class="card" x="1930" y="265" width="380" height="165" fill="#dff3ec"/>
+  <text class="head" x="2120" y="335" text-anchor="middle">RECOVER</text>
+  <text class="small" x="2120" y="385" text-anchor="middle">supported primitive lattice</text>
+
+  <rect class="card" x="1930" y="480" width="380" height="165" fill="#f8e5e5"/>
+  <text class="head" x="2120" y="550" text-anchor="middle">ABSTAIN</text>
+  <text class="small" x="2120" y="600" text-anchor="middle">ambiguous / insufficient</text>
+
+  <rect x="220" y="780" width="1960" height="410" rx="38" fill="#f4f6f7" stroke="#213547" stroke-width="5"/>
+  <text class="head" x="1200" y="860" text-anchor="middle">Prospective public-data record</text>
+
+  <rect x="360" y="920" width="460" height="170" rx="25" fill="#dff3ec" stroke="#009e73" stroke-width="5"/>
+  <text class="title" x="590" y="1000" text-anchor="middle">1</text>
+  <text class="body" x="590" y="1052" text-anchor="middle">correct recovery</text>
+
+  <rect x="970" y="920" width="460" height="170" rx="25" fill="#fff2d6" stroke="#e69f00" stroke-width="5"/>
+  <text class="title" x="1200" y="1000" text-anchor="middle">2</text>
+  <text class="body" x="1200" y="1052" text-anchor="middle">conservative misses</text>
+
+  <rect x="1580" y="920" width="460" height="170" rx="25" fill="#e8f2f8" stroke="#0072b2" stroke-width="5"/>
+  <text class="title" x="1810" y="1000" text-anchor="middle">0</text>
+  <text class="body" x="1810" y="1052" text-anchor="middle">confident wrong lattices</text>
+
+  <text class="small" x="1200" y="1150" text-anchor="middle">Real recovery capability established; broad indexing validity and downstream D6–D7 transfer are not.</text>
+</svg>

@@ -8,8 +8,10 @@ invented in the scientific manuscript.
 - [x] Select *Journal of Applied Crystallography*, Research Paper, as the
   target. Record its scope, category choice, length guidance, reference style,
   data policy, and publication route in `paper/JOURNAL_PLAN.md`.
-- [ ] Convert the Markdown manuscript to the current IUCr Word or LaTeX
-  template.
+- [x] Prepare a single-column, double-spaced Word manuscript consistent with
+  the current IUCr preprint requirements. The optional hosted DOCX template
+  was unavailable behind an interactive verification page, so the distributable
+  Word source was built directly from the published formatting requirements.
 - [x] Add the corresponding-author email and ORCID.
 - [x] Confirm the affiliation as “Independent researcher (solo,
   AI-assisted), Las Vegas, Nevada, USA”.
@@ -22,16 +24,20 @@ invented in the scientific manuscript.
 - [x] Confirm the four exact Zenodo `v0.1.1` files under version DOI
   `10.5281/zenodo.21654414`, linked to concept DOI
   `10.5281/zenodo.21639283`.
-- [ ] Record any Software Heritage snapshot identifier after archival
-  completes.
-- [ ] Decide whether the detailed evidence table remains in the main text or
-  moves to supplementary material.
-- [ ] Add the graphical abstract or thumbnail requested by the journal. Add
-  other figures only when they communicate a relationship not already clear
-  from the tables; at minimum, consider a pipeline schematic and the D4.5
-  causal-ablation comparison.
-- [ ] Ask one crystallographer or diffraction-software developer to review the
-  method definitions and claim boundary.
+- [ ] Record the Software Heritage snapshot identifier when save request
+  `2402658` completes. This is archival redundancy and is not a submission
+  blocker because the exact release is already public through GitHub and
+  Zenodo.
+- [x] Keep both evidence tables in the main text. Table 1 defines the
+  development/prospective/exclusion roles needed to interpret every result,
+  and Table 2 makes the complete prospective record visible. No supplementary
+  file is warranted solely to duplicate repository JSON records.
+- [x] Add a 600-dpi pipeline figure to the manuscript and a separate
+  600-dpi graphical abstract.
+- [x] Publicly request an independent clean-install/replay review through
+  GitHub issue #6 and external posts. No response has yet been received;
+  independent reproduction remains explicitly unestablished and is not being
+  treated as a submission blocker.
 - [ ] Confirm immediately before submission that the manuscript is original
   and is not under consideration elsewhere.
 
@@ -65,5 +71,6 @@ invented in the scientific manuscript.
   Actions run `30415938565`.
 - [x] Verify the raw-builder imports and all 21 frozen method sources from an
   isolated installed wheel under Python 3.12.
-- [ ] Record the final manuscript commit and Git tree in the submission
-  materials.
+- [ ] Record the merge commit and Git tree after the manuscript PR is merged;
+  then update the private submission log or journal form without changing the
+  submitted scientific content.
