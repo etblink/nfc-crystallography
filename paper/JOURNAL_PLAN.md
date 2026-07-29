@@ -57,6 +57,9 @@ publication route.
   human–AI disclosure sections are present.
 - The AI disclosure identifies the author as accountable and describes the
   uses of AI assistance.
+- The exact `v0.1.1` release files are archived under Zenodo version DOI
+  `10.5281/zenodo.21654414`, linked to concept DOI
+  `10.5281/zenodo.21639283`.
 
 ## Still required before submission
 
@@ -66,6 +69,4 @@ publication route.
 3. Add a graphical abstract or thumbnail image.
 4. Decide which evidence table remains in the article and what moves to
    supporting information.
-5. Confirm the Zenodo `v0.1.1` files under concept DOI
-   `10.5281/zenodo.21639283`.
-6. Select the most closely matched editor in the live submission system.
+5. Select the most closely matched editor in the live submission system.

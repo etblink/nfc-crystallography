@@ -30,8 +30,9 @@ determination, independent validation, or broader physical theory.
 The software, fixed method definitions, compact evidence, prospective records,
 hash-bound data manifests, and reproduction instructions are public at
 <https://github.com/etblink/nfc-crystallography>. The version-independent
-archive identifier is <https://doi.org/10.5281/zenodo.21639283>; the
-packaging-corrected `v0.1.1` files will be confirmed there before submission.
+archive identifier is <https://doi.org/10.5281/zenodo.21639283>. The exact
+packaging-corrected `v0.1.1` files are archived under
+<https://doi.org/10.5281/zenodo.21654414>.
 
 The work was self-funded, and the author declares no competing interests. AI
 systems assisted with code generation, diagnostic design, literature

@@ -19,9 +19,9 @@ invented in the scientific manuscript.
   disclosures. Recheck the live submission form for any corresponding
   metadata fields when submitting.
 - [x] Draft the journal covering letter.
-- [ ] Confirm that the Zenodo `v0.1.1` files are published under concept DOI
-  `10.5281/zenodo.21639283`; until then, cite the exact GitHub release as the
-  `v0.1.1` source of record.
+- [x] Confirm the four exact Zenodo `v0.1.1` files under version DOI
+  `10.5281/zenodo.21654414`, linked to concept DOI
+  `10.5281/zenodo.21639283`.
 - [ ] Record any Software Heritage snapshot identifier after archival
   completes.
 - [ ] Decide whether the detailed evidence table remains in the main text or

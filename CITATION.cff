@@ -12,6 +12,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.21639283"
     description: "Zenodo concept DOI for all versions"
+  - type: doi
+    value: "10.5281/zenodo.21654414"
+    description: "Zenodo version DOI for v0.1.1"
 license: BSD-3-Clause
 version: 0.1.1
 date-released: 2026-07-28

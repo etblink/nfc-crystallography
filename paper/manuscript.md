@@ -573,14 +573,16 @@ prospective records, and reproduction instructions are available at
 software release is `v0.1.1`, commit
 `088787ed4927d4c1560e2102d2cb7cd72d073a65`, Git tree
 `80411f6268ad987426f376adb961c75215d4437d`. The version-independent Zenodo
-concept DOI is <https://doi.org/10.5281/zenodo.21639283>. Public release
-`v0.1.1` is the packaging-corrected source of record on GitHub. Its
-deterministic source ZIP, wheel, and source-distribution SHA-256 values are,
+concept DOI is <https://doi.org/10.5281/zenodo.21639283>. The exact
+packaging-corrected `v0.1.1` release files are archived under Zenodo version
+DOI <https://doi.org/10.5281/zenodo.21654414>. The deterministic source ZIP,
+wheel, source distribution, and checksum ledger SHA-256 values are,
 respectively,
 `2f466c1f16d9dd62a5f86cdf8d238f892ec286b43081c746eb4675d4d7e82bee`,
 `16d7461c437cf32e3c3fc0c97b29368e37c8f248a79651869083591395213083`,
+`bafc9b484c7a14f1231ea8ec1d0452aa023dba8bea2bfa494b6feeb3d0153392`,
 and
-`bafc9b484c7a14f1231ea8ec1d0452aa023dba8bea2bfa494b6feeb3d0153392`.
+`e5fc0fca11ab68f5680bd22267da6ca9bb09224422ad3b6ab5c629fab9bdabb1`.
 
 Raw-data URLs, sizes, and SHA-256 hashes are stored under
 `data_manifests/`. The 4JX2 truth-free commitment and post-commitment
