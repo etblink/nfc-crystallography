@@ -19,10 +19,14 @@ real-data failures on two 6GN3 sweeps. The resulting D5 lineage recovered
 physical primitive lattices on multiple development corpora and correctly
 recovered 8VTD in a prospective run. A second prospective corpus, 9JZO,
 produced an ambiguous decision despite containing the physical primitive
-family among its surviving candidates. Other public corpora produced
-abstentions or exposed an unrelated conventional-qualification defect. These
-results establish real geometric recovery capability and explicit limitations;
-they do not establish transfer of later intensity stages, independent external
+family among its surviving candidates. A subsequent unchanged baseline-B run
+on 4JX2 returned `INSUFFICIENT_SIGNAL`; post-commitment scoring showed that its
+single-scale 0.006 Å⁻¹ direct candidate was primitive-equivalent to stable
+conventional full and split solutions, but the candidate did not satisfy the
+two-scale persistence rule. Other public corpora produced abstentions or
+exposed an unrelated conventional-qualification defect. These results
+establish real geometric recovery capability and explicit limitations; they
+do not establish transfer of later intensity stages, independent external
 validation, or support for NFC as a cosmological theory.
 
 ## 1. Introduction
@@ -161,6 +165,18 @@ assignment and close reciprocal metrics, but failed a direct matrix-angle gate
 at approximately 180°. They remain historical pre-execution exclusions and
 are now used only to develop and test the invariant qualification interface.
 
+An additional baseline-B-only prospective test used 4JX2 after the invariant
+gate established stable cell-blind conventional indexing for the full corpus
+and both independently constructed halves. Baseline B was executed unchanged
+and returned `INSUFFICIENT_SIGNAL` with reason `NO_PERSISTENT_FAMILY`.
+Per-scale decisions were `INSUFFICIENT_SIGNAL` at 0.012 Å⁻¹,
+`AMBIGUOUS_LATTICE` at 0.009 Å⁻¹, and a direct recovery at 0.006 Å⁻¹.
+The committed final decision remained an abstention because no family appeared
+at the required two scales. After commitment, the 0.006 Å⁻¹ direct candidate
+was primitive-equivalent to all three conventional partitions; the coarser
+candidates and weak index-two completion were not. This is a conservative
+missed recovery, not a retroactive recovery.
+
 ### 3.4 Negative and unresolved cases
 
 9JQ9 retained strong D4 signal but did not support a stable D5 lattice and
@@ -184,8 +200,11 @@ and competing-lattice controls.
 Explicit abstention is therefore a substantive scientific feature. A miss on a
 stable positive control is a sensitivity limitation, but it is preferable to a
 confident wrong lattice. The current prospective record contains one correct
-recovery, one conservative miss with the physical family present, and no
-confident prospective wrong recovery.
+recovery, two conservative misses with physical primitive families present at
+the latent or single-scale level, and no confident prospective wrong recovery.
+The 4JX2 result further localizes the present limitation: candidate generation
+reached the physical family, while cross-scale persistence did not authorize
+it.
 
 The results do not yet authorize conclusions about observation-level index
 transfer, intensity prediction, or later D6c1–D7 stages. Nor do they provide a
@@ -199,8 +218,12 @@ runner, public data manifests, fast tests, a complete evidence table, and the
 invariant conventional gate. Large public raw archives are downloaded
 separately. Historical ZIP releases remain the deep audit record.
 
-The next empirical test should use one untouched public corpus, qualify it
-with the invariant conventional gate, and execute unchanged baseline B before
-truth scoring. Exploratory D6c1 work should begin only after another correct
-prospective geometric recovery on a corpus that also supports a reproducible
-public observation-level reduction.
+The planned additional baseline-B-only prospective test is complete. Its 4JX2
+outcome was a conservative miss, so exploratory D6c1 remains deferred: a second
+committed correct prospective geometric recovery was not obtained, and no
+public reproducible observation-level reduction was established for this
+corpus. The immediate priorities are publication of the current positive and
+negative record and an independent clean-install reproduction. Any future
+change to the persistence or decision rules must be developed as a separately
+versioned successor, with 9JZO and 4JX2 treated as development corpora rather
+than reinterpreted prospective successes.

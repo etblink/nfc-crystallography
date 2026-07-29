@@ -59,6 +59,13 @@
       "interpretation": "Conservative missed recovery; common latent family was primitive-equivalent."
     },
     {
+      "corpus": "4JX2",
+      "role": "BASELINE_B_ONLY_PROSPECTIVE",
+      "method": "baseline B",
+      "outcome": "INSUFFICIENT_SIGNAL_NO_PERSISTENT_FAMILY",
+      "interpretation": "Conservative missed recovery; the recorded direct candidate at 0.006 inverse angstrom was primitive-equivalent across conventional full and split solutions, but it appeared at only one of three required scales."
+    },
+    {
       "corpus": "5V0G",
       "role": "TRUTH_EXPOSED_DEVELOPMENT",
       "method": "baseline B",
@@ -89,6 +96,7 @@
   ],
   "claim_boundaries": [
     "CANDIDATE_C_INCREMENTAL_VALUE_NOT_ESTABLISHED",
+    "SECOND_PROSPECTIVE_CORRECT_RECOVERY_NOT_ESTABLISHED",
     "D6C1_THROUGH_D7_TRANSFER_NOT_ESTABLISHED",
     "INDEPENDENT_EXTERNAL_REPRODUCTION_NOT_ESTABLISHED",
     "NFC_AS_COSMOLOGY_OR_THEORY_OF_EVERYTHING_NOT_ESTABLISHED"
